@@ -1,0 +1,730 @@
+{
+  "phase": "validation",
+  "status": "BAŞARILI",
+  "measurement_completed": true,
+  "counts": {
+    "ocr_gt": 370,
+    "ocr_predictions": 543,
+    "ocr_matched": 369,
+    "ocr_matched_iou50": 244,
+    "ocr_exact": 363,
+    "quantity_gt": 270,
+    "quantity_matched": 270,
+    "quantity_correct_si": 264,
+    "quantity_usable_correct_si": 264,
+    "unit_correct": 264,
+    "force_gt": 100,
+    "force_eligible": 100,
+    "force_assignments": 98,
+    "force_link_correct": 98,
+    "force_eligible_link_correct": 98,
+    "force_value_and_link_correct": 98,
+    "images": 50,
+    "accepted_images": 44,
+    "full_correct": 44,
+    "accepted_wrong": 0,
+    "reviewed_images": 6,
+    "L_m_available": 46,
+    "L_m_correct": 46,
+    "P1_kN_available": 49,
+    "P1_kN_correct": 49,
+    "x1_m_available": 46,
+    "x1_m_correct": 46,
+    "P2_kN_available": 49,
+    "P2_kN_correct": 49,
+    "x2_m_available": 47,
+    "x2_m_correct": 47
+  },
+  "metrics": {
+    "ocr_text_detection_precision_iou30": 0.6795580110497238,
+    "ocr_text_detection_recall_iou30": 0.9972972972972973,
+    "ocr_text_detection_recall_iou50": 0.6594594594594595,
+    "ocr_exact_text_recall": 0.981081081081081,
+    "ocr_quantity_correct_si_all_gt": 0.9777777777777777,
+    "ocr_quantity_usable_correct_si_all_gt": 0.9777777777777777,
+    "ocr_quantity_correct_si_when_localized": 0.9777777777777777,
+    "ocr_unit_correct_all_gt": 0.9777777777777777,
+    "force_text_link_correct_all_forces": 0.98,
+    "force_text_link_correct_eligible": 0.98,
+    "force_text_value_and_link_correct_all_forces": 0.98,
+    "full_correct_problem_rate": 0.88,
+    "complete_extraction_coverage": 0.88,
+    "accepted_but_wrong_rate": 0.0,
+    "accepted_precision": 1.0,
+    "review_rate": 0.12,
+    "fields": {
+      "L_m": {
+        "coverage": 0.92,
+        "correct_all": 0.92
+      },
+      "P1_kN": {
+        "coverage": 0.98,
+        "correct_all": 0.98
+      },
+      "x1_m": {
+        "coverage": 0.92,
+        "correct_all": 0.92
+      },
+      "P2_kN": {
+        "coverage": 0.98,
+        "correct_all": 0.98
+      },
+      "x2_m": {
+        "coverage": 0.94,
+        "correct_all": 0.94
+      }
+    }
+  },
+  "issues": {
+    "missing_unit": 6,
+    "incomplete_dimension_chain": 4,
+    "symbol_inventory": 1
+  },
+  "by_layout": {
+    "chain_total": {
+      "counts": {
+        "ocr_gt": 160,
+        "ocr_predictions": 225,
+        "ocr_matched": 160,
+        "ocr_matched_iou50": 106,
+        "ocr_exact": 157,
+        "quantity_gt": 120,
+        "quantity_matched": 120,
+        "quantity_correct_si": 117,
+        "quantity_usable_correct_si": 117,
+        "unit_correct": 117,
+        "force_gt": 40,
+        "force_eligible": 40,
+        "force_assignments": 40,
+        "force_link_correct": 40,
+        "force_eligible_link_correct": 40,
+        "force_value_and_link_correct": 40,
+        "images": 20,
+        "accepted_images": 18,
+        "full_correct": 18,
+        "accepted_wrong": 0,
+        "reviewed_images": 2,
+        "L_m_available": 19,
+        "L_m_correct": 19,
+        "P1_kN_available": 20,
+        "P1_kN_correct": 20,
+        "x1_m_available": 19,
+        "x1_m_correct": 19,
+        "P2_kN_available": 20,
+        "P2_kN_correct": 20,
+        "x2_m_available": 19,
+        "x2_m_correct": 19
+      },
+      "metrics": {
+        "ocr_text_detection_precision_iou30": 0.7111111111111111,
+        "ocr_text_detection_recall_iou30": 1.0,
+        "ocr_text_detection_recall_iou50": 0.6625,
+        "ocr_exact_text_recall": 0.98125,
+        "ocr_quantity_correct_si_all_gt": 0.975,
+        "ocr_quantity_usable_correct_si_all_gt": 0.975,
+        "ocr_quantity_correct_si_when_localized": 0.975,
+        "ocr_unit_correct_all_gt": 0.975,
+        "force_text_link_correct_all_forces": 1.0,
+        "force_text_link_correct_eligible": 1.0,
+        "force_text_value_and_link_correct_all_forces": 1.0,
+        "full_correct_problem_rate": 0.9,
+        "complete_extraction_coverage": 0.9,
+        "accepted_but_wrong_rate": 0.0,
+        "accepted_precision": 1.0,
+        "review_rate": 0.1,
+        "fields": {
+          "L_m": {
+            "coverage": 0.95,
+            "correct_all": 0.95
+          },
+          "P1_kN": {
+            "coverage": 1.0,
+            "correct_all": 1.0
+          },
+          "x1_m": {
+            "coverage": 0.95,
+            "correct_all": 0.95
+          },
+          "P2_kN": {
+            "coverage": 1.0,
+            "correct_all": 1.0
+          },
+          "x2_m": {
+            "coverage": 0.95,
+            "correct_all": 0.95
+          }
+        }
+      }
+    },
+    "datum": {
+      "counts": {
+        "ocr_gt": 70,
+        "ocr_predictions": 110,
+        "ocr_matched": 70,
+        "ocr_matched_iou50": 41,
+        "ocr_exact": 69,
+        "quantity_gt": 50,
+        "quantity_matched": 50,
+        "quantity_correct_si": 49,
+        "quantity_usable_correct_si": 49,
+        "unit_correct": 49,
+        "force_gt": 20,
+        "force_eligible": 20,
+        "force_assignments": 20,
+        "force_link_correct": 20,
+        "force_eligible_link_correct": 20,
+        "force_value_and_link_correct": 20,
+        "images": 10,
+        "accepted_images": 9,
+        "full_correct": 9,
+        "accepted_wrong": 0,
+        "reviewed_images": 1,
+        "L_m_available": 10,
+        "L_m_correct": 10,
+        "P1_kN_available": 10,
+        "P1_kN_correct": 10,
+        "x1_m_available": 9,
+        "x1_m_correct": 9,
+        "P2_kN_available": 10,
+        "P2_kN_correct": 10,
+        "x2_m_available": 10,
+        "x2_m_correct": 10
+      },
+      "metrics": {
+        "ocr_text_detection_precision_iou30": 0.6363636363636364,
+        "ocr_text_detection_recall_iou30": 1.0,
+        "ocr_text_detection_recall_iou50": 0.5857142857142857,
+        "ocr_exact_text_recall": 0.9857142857142858,
+        "ocr_quantity_correct_si_all_gt": 0.98,
+        "ocr_quantity_usable_correct_si_all_gt": 0.98,
+        "ocr_quantity_correct_si_when_localized": 0.98,
+        "ocr_unit_correct_all_gt": 0.98,
+        "force_text_link_correct_all_forces": 1.0,
+        "force_text_link_correct_eligible": 1.0,
+        "force_text_value_and_link_correct_all_forces": 1.0,
+        "full_correct_problem_rate": 0.9,
+        "complete_extraction_coverage": 0.9,
+        "accepted_but_wrong_rate": 0.0,
+        "accepted_precision": 1.0,
+        "review_rate": 0.1,
+        "fields": {
+          "L_m": {
+            "coverage": 1.0,
+            "correct_all": 1.0
+          },
+          "P1_kN": {
+            "coverage": 1.0,
+            "correct_all": 1.0
+          },
+          "x1_m": {
+            "coverage": 0.9,
+            "correct_all": 0.9
+          },
+          "P2_kN": {
+            "coverage": 1.0,
+            "correct_all": 1.0
+          },
+          "x2_m": {
+            "coverage": 1.0,
+            "correct_all": 1.0
+          }
+        }
+      }
+    },
+    "chain_only": {
+      "counts": {
+        "ocr_gt": 70,
+        "ocr_predictions": 99,
+        "ocr_matched": 69,
+        "ocr_matched_iou50": 54,
+        "ocr_exact": 68,
+        "quantity_gt": 50,
+        "quantity_matched": 50,
+        "quantity_correct_si": 49,
+        "quantity_usable_correct_si": 49,
+        "unit_correct": 49,
+        "force_gt": 20,
+        "force_eligible": 20,
+        "force_assignments": 18,
+        "force_link_correct": 18,
+        "force_eligible_link_correct": 18,
+        "force_value_and_link_correct": 18,
+        "images": 10,
+        "accepted_images": 8,
+        "full_correct": 8,
+        "accepted_wrong": 0,
+        "reviewed_images": 2,
+        "L_m_available": 8,
+        "L_m_correct": 8,
+        "P1_kN_available": 9,
+        "P1_kN_correct": 9,
+        "x1_m_available": 8,
+        "x1_m_correct": 8,
+        "P2_kN_available": 9,
+        "P2_kN_correct": 9,
+        "x2_m_available": 8,
+        "x2_m_correct": 8
+      },
+      "metrics": {
+        "ocr_text_detection_precision_iou30": 0.696969696969697,
+        "ocr_text_detection_recall_iou30": 0.9857142857142858,
+        "ocr_text_detection_recall_iou50": 0.7714285714285715,
+        "ocr_exact_text_recall": 0.9714285714285714,
+        "ocr_quantity_correct_si_all_gt": 0.98,
+        "ocr_quantity_usable_correct_si_all_gt": 0.98,
+        "ocr_quantity_correct_si_when_localized": 0.98,
+        "ocr_unit_correct_all_gt": 0.98,
+        "force_text_link_correct_all_forces": 0.9,
+        "force_text_link_correct_eligible": 0.9,
+        "force_text_value_and_link_correct_all_forces": 0.9,
+        "full_correct_problem_rate": 0.8,
+        "complete_extraction_coverage": 0.8,
+        "accepted_but_wrong_rate": 0.0,
+        "accepted_precision": 1.0,
+        "review_rate": 0.2,
+        "fields": {
+          "L_m": {
+            "coverage": 0.8,
+            "correct_all": 0.8
+          },
+          "P1_kN": {
+            "coverage": 0.9,
+            "correct_all": 0.9
+          },
+          "x1_m": {
+            "coverage": 0.8,
+            "correct_all": 0.8
+          },
+          "P2_kN": {
+            "coverage": 0.9,
+            "correct_all": 0.9
+          },
+          "x2_m": {
+            "coverage": 0.8,
+            "correct_all": 0.8
+          }
+        }
+      }
+    },
+    "mixed": {
+      "counts": {
+        "ocr_gt": 70,
+        "ocr_predictions": 109,
+        "ocr_matched": 70,
+        "ocr_matched_iou50": 43,
+        "ocr_exact": 69,
+        "quantity_gt": 50,
+        "quantity_matched": 50,
+        "quantity_correct_si": 49,
+        "quantity_usable_correct_si": 49,
+        "unit_correct": 49,
+        "force_gt": 20,
+        "force_eligible": 20,
+        "force_assignments": 20,
+        "force_link_correct": 20,
+        "force_eligible_link_correct": 20,
+        "force_value_and_link_correct": 20,
+        "images": 10,
+        "accepted_images": 9,
+        "full_correct": 9,
+        "accepted_wrong": 0,
+        "reviewed_images": 1,
+        "L_m_available": 9,
+        "L_m_correct": 9,
+        "P1_kN_available": 10,
+        "P1_kN_correct": 10,
+        "x1_m_available": 10,
+        "x1_m_correct": 10,
+        "P2_kN_available": 10,
+        "P2_kN_correct": 10,
+        "x2_m_available": 10,
+        "x2_m_correct": 10
+      },
+      "metrics": {
+        "ocr_text_detection_precision_iou30": 0.6422018348623854,
+        "ocr_text_detection_recall_iou30": 1.0,
+        "ocr_text_detection_recall_iou50": 0.6142857142857143,
+        "ocr_exact_text_recall": 0.9857142857142858,
+        "ocr_quantity_correct_si_all_gt": 0.98,
+        "ocr_quantity_usable_correct_si_all_gt": 0.98,
+        "ocr_quantity_correct_si_when_localized": 0.98,
+        "ocr_unit_correct_all_gt": 0.98,
+        "force_text_link_correct_all_forces": 1.0,
+        "force_text_link_correct_eligible": 1.0,
+        "force_text_value_and_link_correct_all_forces": 1.0,
+        "full_correct_problem_rate": 0.9,
+        "complete_extraction_coverage": 0.9,
+        "accepted_but_wrong_rate": 0.0,
+        "accepted_precision": 1.0,
+        "review_rate": 0.1,
+        "fields": {
+          "L_m": {
+            "coverage": 0.9,
+            "correct_all": 0.9
+          },
+          "P1_kN": {
+            "coverage": 1.0,
+            "correct_all": 1.0
+          },
+          "x1_m": {
+            "coverage": 1.0,
+            "correct_all": 1.0
+          },
+          "P2_kN": {
+            "coverage": 1.0,
+            "correct_all": 1.0
+          },
+          "x2_m": {
+            "coverage": 1.0,
+            "correct_all": 1.0
+          }
+        }
+      }
+    }
+  },
+  "by_font": {
+    "cour.ttf": {
+      "counts": {
+        "ocr_gt": 134,
+        "ocr_predictions": 198,
+        "ocr_matched": 133,
+        "ocr_matched_iou50": 82,
+        "ocr_exact": 127,
+        "quantity_gt": 98,
+        "quantity_matched": 98,
+        "quantity_correct_si": 92,
+        "quantity_usable_correct_si": 92,
+        "unit_correct": 92,
+        "force_gt": 36,
+        "force_eligible": 36,
+        "force_assignments": 36,
+        "force_link_correct": 36,
+        "force_eligible_link_correct": 36,
+        "force_value_and_link_correct": 36,
+        "images": 18,
+        "accepted_images": 13,
+        "full_correct": 13,
+        "accepted_wrong": 0,
+        "reviewed_images": 5,
+        "L_m_available": 15,
+        "L_m_correct": 15,
+        "P1_kN_available": 18,
+        "P1_kN_correct": 18,
+        "x1_m_available": 15,
+        "x1_m_correct": 15,
+        "P2_kN_available": 18,
+        "P2_kN_correct": 18,
+        "x2_m_available": 16,
+        "x2_m_correct": 16
+      },
+      "metrics": {
+        "ocr_text_detection_precision_iou30": 0.6717171717171717,
+        "ocr_text_detection_recall_iou30": 0.9925373134328358,
+        "ocr_text_detection_recall_iou50": 0.6119402985074627,
+        "ocr_exact_text_recall": 0.9477611940298507,
+        "ocr_quantity_correct_si_all_gt": 0.9387755102040817,
+        "ocr_quantity_usable_correct_si_all_gt": 0.9387755102040817,
+        "ocr_quantity_correct_si_when_localized": 0.9387755102040817,
+        "ocr_unit_correct_all_gt": 0.9387755102040817,
+        "force_text_link_correct_all_forces": 1.0,
+        "force_text_link_correct_eligible": 1.0,
+        "force_text_value_and_link_correct_all_forces": 1.0,
+        "full_correct_problem_rate": 0.7222222222222222,
+        "complete_extraction_coverage": 0.7222222222222222,
+        "accepted_but_wrong_rate": 0.0,
+        "accepted_precision": 1.0,
+        "review_rate": 0.2777777777777778,
+        "fields": {
+          "L_m": {
+            "coverage": 0.8333333333333334,
+            "correct_all": 0.8333333333333334
+          },
+          "P1_kN": {
+            "coverage": 1.0,
+            "correct_all": 1.0
+          },
+          "x1_m": {
+            "coverage": 0.8333333333333334,
+            "correct_all": 0.8333333333333334
+          },
+          "P2_kN": {
+            "coverage": 1.0,
+            "correct_all": 1.0
+          },
+          "x2_m": {
+            "coverage": 0.8888888888888888,
+            "correct_all": 0.8888888888888888
+          }
+        }
+      }
+    },
+    "arial.ttf": {
+      "counts": {
+        "ocr_gt": 51,
+        "ocr_predictions": 75,
+        "ocr_matched": 51,
+        "ocr_matched_iou50": 35,
+        "ocr_exact": 51,
+        "quantity_gt": 37,
+        "quantity_matched": 37,
+        "quantity_correct_si": 37,
+        "quantity_usable_correct_si": 37,
+        "unit_correct": 37,
+        "force_gt": 14,
+        "force_eligible": 14,
+        "force_assignments": 12,
+        "force_link_correct": 12,
+        "force_eligible_link_correct": 12,
+        "force_value_and_link_correct": 12,
+        "images": 7,
+        "accepted_images": 6,
+        "full_correct": 6,
+        "accepted_wrong": 0,
+        "reviewed_images": 1,
+        "L_m_available": 6,
+        "L_m_correct": 6,
+        "P1_kN_available": 6,
+        "P1_kN_correct": 6,
+        "x1_m_available": 6,
+        "x1_m_correct": 6,
+        "P2_kN_available": 6,
+        "P2_kN_correct": 6,
+        "x2_m_available": 6,
+        "x2_m_correct": 6
+      },
+      "metrics": {
+        "ocr_text_detection_precision_iou30": 0.68,
+        "ocr_text_detection_recall_iou30": 1.0,
+        "ocr_text_detection_recall_iou50": 0.6862745098039216,
+        "ocr_exact_text_recall": 1.0,
+        "ocr_quantity_correct_si_all_gt": 1.0,
+        "ocr_quantity_usable_correct_si_all_gt": 1.0,
+        "ocr_quantity_correct_si_when_localized": 1.0,
+        "ocr_unit_correct_all_gt": 1.0,
+        "force_text_link_correct_all_forces": 0.8571428571428571,
+        "force_text_link_correct_eligible": 0.8571428571428571,
+        "force_text_value_and_link_correct_all_forces": 0.8571428571428571,
+        "full_correct_problem_rate": 0.8571428571428571,
+        "complete_extraction_coverage": 0.8571428571428571,
+        "accepted_but_wrong_rate": 0.0,
+        "accepted_precision": 1.0,
+        "review_rate": 0.14285714285714285,
+        "fields": {
+          "L_m": {
+            "coverage": 0.8571428571428571,
+            "correct_all": 0.8571428571428571
+          },
+          "P1_kN": {
+            "coverage": 0.8571428571428571,
+            "correct_all": 0.8571428571428571
+          },
+          "x1_m": {
+            "coverage": 0.8571428571428571,
+            "correct_all": 0.8571428571428571
+          },
+          "P2_kN": {
+            "coverage": 0.8571428571428571,
+            "correct_all": 0.8571428571428571
+          },
+          "x2_m": {
+            "coverage": 0.8571428571428571,
+            "correct_all": 0.8571428571428571
+          }
+        }
+      }
+    },
+    "times.ttf": {
+      "counts": {
+        "ocr_gt": 65,
+        "ocr_predictions": 97,
+        "ocr_matched": 65,
+        "ocr_matched_iou50": 49,
+        "ocr_exact": 65,
+        "quantity_gt": 47,
+        "quantity_matched": 47,
+        "quantity_correct_si": 47,
+        "quantity_usable_correct_si": 47,
+        "unit_correct": 47,
+        "force_gt": 18,
+        "force_eligible": 18,
+        "force_assignments": 18,
+        "force_link_correct": 18,
+        "force_eligible_link_correct": 18,
+        "force_value_and_link_correct": 18,
+        "images": 9,
+        "accepted_images": 9,
+        "full_correct": 9,
+        "accepted_wrong": 0,
+        "reviewed_images": 0,
+        "L_m_available": 9,
+        "L_m_correct": 9,
+        "P1_kN_available": 9,
+        "P1_kN_correct": 9,
+        "x1_m_available": 9,
+        "x1_m_correct": 9,
+        "P2_kN_available": 9,
+        "P2_kN_correct": 9,
+        "x2_m_available": 9,
+        "x2_m_correct": 9
+      },
+      "metrics": {
+        "ocr_text_detection_precision_iou30": 0.6701030927835051,
+        "ocr_text_detection_recall_iou30": 1.0,
+        "ocr_text_detection_recall_iou50": 0.7538461538461538,
+        "ocr_exact_text_recall": 1.0,
+        "ocr_quantity_correct_si_all_gt": 1.0,
+        "ocr_quantity_usable_correct_si_all_gt": 1.0,
+        "ocr_quantity_correct_si_when_localized": 1.0,
+        "ocr_unit_correct_all_gt": 1.0,
+        "force_text_link_correct_all_forces": 1.0,
+        "force_text_link_correct_eligible": 1.0,
+        "force_text_value_and_link_correct_all_forces": 1.0,
+        "full_correct_problem_rate": 1.0,
+        "complete_extraction_coverage": 1.0,
+        "accepted_but_wrong_rate": 0.0,
+        "accepted_precision": 1.0,
+        "review_rate": 0.0,
+        "fields": {
+          "L_m": {
+            "coverage": 1.0,
+            "correct_all": 1.0
+          },
+          "P1_kN": {
+            "coverage": 1.0,
+            "correct_all": 1.0
+          },
+          "x1_m": {
+            "coverage": 1.0,
+            "correct_all": 1.0
+          },
+          "P2_kN": {
+            "coverage": 1.0,
+            "correct_all": 1.0
+          },
+          "x2_m": {
+            "coverage": 1.0,
+            "correct_all": 1.0
+          }
+        }
+      }
+    },
+    "calibri.ttf": {
+      "counts": {
+        "ocr_gt": 120,
+        "ocr_predictions": 173,
+        "ocr_matched": 120,
+        "ocr_matched_iou50": 78,
+        "ocr_exact": 120,
+        "quantity_gt": 88,
+        "quantity_matched": 88,
+        "quantity_correct_si": 88,
+        "quantity_usable_correct_si": 88,
+        "unit_correct": 88,
+        "force_gt": 32,
+        "force_eligible": 32,
+        "force_assignments": 32,
+        "force_link_correct": 32,
+        "force_eligible_link_correct": 32,
+        "force_value_and_link_correct": 32,
+        "images": 16,
+        "accepted_images": 16,
+        "full_correct": 16,
+        "accepted_wrong": 0,
+        "reviewed_images": 0,
+        "L_m_available": 16,
+        "L_m_correct": 16,
+        "P1_kN_available": 16,
+        "P1_kN_correct": 16,
+        "x1_m_available": 16,
+        "x1_m_correct": 16,
+        "P2_kN_available": 16,
+        "P2_kN_correct": 16,
+        "x2_m_available": 16,
+        "x2_m_correct": 16
+      },
+      "metrics": {
+        "ocr_text_detection_precision_iou30": 0.6936416184971098,
+        "ocr_text_detection_recall_iou30": 1.0,
+        "ocr_text_detection_recall_iou50": 0.65,
+        "ocr_exact_text_recall": 1.0,
+        "ocr_quantity_correct_si_all_gt": 1.0,
+        "ocr_quantity_usable_correct_si_all_gt": 1.0,
+        "ocr_quantity_correct_si_when_localized": 1.0,
+        "ocr_unit_correct_all_gt": 1.0,
+        "force_text_link_correct_all_forces": 1.0,
+        "force_text_link_correct_eligible": 1.0,
+        "force_text_value_and_link_correct_all_forces": 1.0,
+        "full_correct_problem_rate": 1.0,
+        "complete_extraction_coverage": 1.0,
+        "accepted_but_wrong_rate": 0.0,
+        "accepted_precision": 1.0,
+        "review_rate": 0.0,
+        "fields": {
+          "L_m": {
+            "coverage": 1.0,
+            "correct_all": 1.0
+          },
+          "P1_kN": {
+            "coverage": 1.0,
+            "correct_all": 1.0
+          },
+          "x1_m": {
+            "coverage": 1.0,
+            "correct_all": 1.0
+          },
+          "P2_kN": {
+            "coverage": 1.0,
+            "correct_all": 1.0
+          },
+          "x2_m": {
+            "coverage": 1.0,
+            "correct_all": 1.0
+          }
+        }
+      }
+    }
+  },
+  "elapsed_seconds": 33.57775689999107,
+  "python": "3.13.12 (tags/v3.13.12:1cbe481, Feb  3 2026, 18:22:25) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "detector": {
+    "model": "tiny",
+    "architecture": "TinyDetector-v1",
+    "checkpoint_sha256": "cd5224a9c9f3a08f490e673a0a272b7e816b5cadad964f5a526c8dbc6738babc",
+    "threshold": 0.35,
+    "retrained_on": "V2 train only; V2 val threshold"
+  },
+  "ocr_engine": {
+    "backend": "RapidOCR / ONNX Runtime CPU",
+    "pretrained": true,
+    "rapidocr_version": "3.10.0",
+    "onnxruntime_version": "1.31.1",
+    "parameters": {
+      "Global.model_root_dir": "C:\\Users\\HP\\Documents\\Codex\\2026-11-08\\t\\outputs\\StatikAI\\experiments\\ocr_v1_20261108_01\\ocr_models",
+      "Global.log_level": "warning",
+      "Global.use_cls": false,
+      "Global.text_score": 0.0,
+      "Det.ocr_version": "PP-OCRv6",
+      "Det.model_type": "small",
+      "Rec.ocr_version": "PP-OCRv6",
+      "Rec.model_type": "small",
+      "EngineConfig.onnxruntime.intra_op_num_threads": 2,
+      "EngineConfig.onnxruntime.inter_op_num_threads": 1,
+      "EngineConfig.onnxruntime.use_cuda": false
+    },
+    "confidence_note": "recognizer score, not a calibrated probability",
+    "models": {
+      "PP-OCRv6_det_small.onnx": "090f04abcd9d9a7498bc4ebf677e4cb9bdce1fe4197ddb7e529f1ef44e1ff94f",
+      "PP-OCRv6_rec_small.onnx": "6f327246b50388f3c176ae304bd95767ea6dc0c9ae92153ef8cbe210b3c14884"
+    }
+  },
+  "scientific_limitations": [
+    "synthetic same-author data; no real drawings tested",
+    "recognition confidence is uncalibrated; consistent high-confidence OCR errors may pass",
+    "axis-aligned horizontal beam with one pin/roller and two point loads only",
+    "no statics or reaction calculation; no desktop UI integration",
+    "new physical families but same V2 renderer; old V1 test and training safety failure disclosed in amendment.json"
+  ],
+  "failed_image_count": 6,
+  "saved_failure_visualizations": 6
+}

@@ -1,0 +1,9 @@
+{
+  "reason": "Training-only safety fixture 5242 kg was read correctly but label-region gap suppressed unsupported-unit warning.",
+  "old_run": "experiments\\ocr_v1_20261108_01",
+  "source_fixture": "safety_diagnostics/wrong_dimension_unit.png",
+  "evidence": "safety_diagnostics/summary.json: wrong_dimension_unit BA\u015eARISIZ",
+  "test_exposure": "V1 test aggregate progress up to n=190 observed, no test image errors inspected, no score-based selection.",
+  "decision": "Preserve V1 code/results. Fix only safety unit guard; evaluate V1.1 on 50 new physical families generated from a fixed seed before inference.",
+  "no_static_engine_changes": true
+}

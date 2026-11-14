@@ -1,0 +1,269 @@
+FF.F                                                                     [100%]
+================================== FAILURES ===================================
+________________________ test_patches_and_model_shapes ________________________
+
+    def test_patches_and_model_shapes():
+        with tempfile.TemporaryDirectory() as d:
+>           generate(d,10,2026)
+
+test_experiments.py:9: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+generate_dataset.py:102: in generate
+    draw_case(out/'images'/f'{fn}.png',out/'labels'/f'{fn}.txt',L,P1,x1_case,P2,x2,variant)
+generate_dataset.py:42: in draw_case
+    f=fonts(18 if style != 2 else 21, serif=style == 2)
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+generate_dataset.py:19: in fonts
+    return ImageFont.truetype(f, size)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\PIL\ImageFont.py:891: in truetype
+    return freetype(font)
+           ^^^^^^^^^^^^^^
+.venv\Lib\site-packages\PIL\ImageFont.py:888: in freetype
+    return FreeTypeFont(font, size, index, encoding, layout_engine)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <PIL.ImageFont.FreeTypeFont object at 0x000001FC1E04AF90>
+font = '/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf', size = 18, index = 0
+encoding = '', layout_engine = <Layout.BASIC: 0>
+
+    def __init__(
+        self,
+        font: StrOrBytesPath | BinaryIO,
+        size: float = 10,
+        index: int = 0,
+        encoding: str = "",
+        layout_engine: Layout | None = None,
+    ) -> None:
+        # FIXME: use service provider instead
+    
+        if isinstance(core, DeferredError):
+            raise core.ex
+    
+        if size <= 0:
+            msg = f"font size must be greater than 0, not {size}"
+            raise ValueError(msg)
+    
+        self.path = font
+        self.size = size
+        self.index = index
+        self.encoding = encoding
+    
+        if layout_engine not in (Layout.BASIC, Layout.RAQM):
+            layout_engine = Layout.BASIC
+            if core.HAVE_RAQM:
+                layout_engine = Layout.RAQM
+        elif layout_engine == Layout.RAQM and not core.HAVE_RAQM:
+            warnings.warn(
+                "Raqm layout was requested, but Raqm is not available. "
+                "Falling back to basic layout."
+            )
+            layout_engine = Layout.BASIC
+    
+        self.layout_engine = layout_engine
+    
+        def load_from_bytes(f: IO[bytes]) -> None:
+            self.font_bytes = f.read()
+            self.font = core.getfont(
+                "", size, index, encoding, self.font_bytes, layout_engine
+            )
+    
+        if is_path(font):
+            font = os.fspath(font)
+            if sys.platform == "win32":
+                font_bytes_path = font if isinstance(font, bytes) else font.encode()
+                try:
+                    font_bytes_path.decode("ascii")
+                except UnicodeDecodeError:
+                    # FreeType cannot load fonts with non-ASCII characters on Windows
+                    # So load it into memory first
+                    with open(font, "rb") as f:
+                        load_from_bytes(f)
+                    return
+>           self.font = core.getfont(
+                font, size, index, encoding, layout_engine=layout_engine
+            )
+E           OSError: cannot open resource
+
+.venv\Lib\site-packages\PIL\ImageFont.py:302: OSError
+______________________ test_oracle_prediction_evaluation ______________________
+
+    def test_oracle_prediction_evaluation():
+        with tempfile.TemporaryDirectory() as d:
+>           generate(d,10,2026);truth=Path(d)/'ground_truth.csv'
+            ^^^^^^^^^^^^^^^^^^^
+
+test_experiments.py:17: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+generate_dataset.py:102: in generate
+    draw_case(out/'images'/f'{fn}.png',out/'labels'/f'{fn}.txt',L,P1,x1_case,P2,x2,variant)
+generate_dataset.py:42: in draw_case
+    f=fonts(18 if style != 2 else 21, serif=style == 2)
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+generate_dataset.py:19: in fonts
+    return ImageFont.truetype(f, size)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\PIL\ImageFont.py:891: in truetype
+    return freetype(font)
+           ^^^^^^^^^^^^^^
+.venv\Lib\site-packages\PIL\ImageFont.py:888: in freetype
+    return FreeTypeFont(font, size, index, encoding, layout_engine)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <PIL.ImageFont.FreeTypeFont object at 0x000001FC1E105950>
+font = '/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf', size = 18, index = 0
+encoding = '', layout_engine = <Layout.BASIC: 0>
+
+    def __init__(
+        self,
+        font: StrOrBytesPath | BinaryIO,
+        size: float = 10,
+        index: int = 0,
+        encoding: str = "",
+        layout_engine: Layout | None = None,
+    ) -> None:
+        # FIXME: use service provider instead
+    
+        if isinstance(core, DeferredError):
+            raise core.ex
+    
+        if size <= 0:
+            msg = f"font size must be greater than 0, not {size}"
+            raise ValueError(msg)
+    
+        self.path = font
+        self.size = size
+        self.index = index
+        self.encoding = encoding
+    
+        if layout_engine not in (Layout.BASIC, Layout.RAQM):
+            layout_engine = Layout.BASIC
+            if core.HAVE_RAQM:
+                layout_engine = Layout.RAQM
+        elif layout_engine == Layout.RAQM and not core.HAVE_RAQM:
+            warnings.warn(
+                "Raqm layout was requested, but Raqm is not available. "
+                "Falling back to basic layout."
+            )
+            layout_engine = Layout.BASIC
+    
+        self.layout_engine = layout_engine
+    
+        def load_from_bytes(f: IO[bytes]) -> None:
+            self.font_bytes = f.read()
+            self.font = core.getfont(
+                "", size, index, encoding, self.font_bytes, layout_engine
+            )
+    
+        if is_path(font):
+            font = os.fspath(font)
+            if sys.platform == "win32":
+                font_bytes_path = font if isinstance(font, bytes) else font.encode()
+                try:
+                    font_bytes_path.decode("ascii")
+                except UnicodeDecodeError:
+                    # FreeType cannot load fonts with non-ASCII characters on Windows
+                    # So load it into memory first
+                    with open(font, "rb") as f:
+                        load_from_bytes(f)
+                    return
+>           self.font = core.getfont(
+                font, size, index, encoding, layout_engine=layout_engine
+            )
+E           OSError: cannot open resource
+
+.venv\Lib\site-packages\PIL\ImageFont.py:302: OSError
+________________________________ test_dataset _________________________________
+
+    def test_dataset():
+        with tempfile.TemporaryDirectory() as t:
+>           generate(t,40,2209)
+
+test_generator.py:10: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+generate_dataset.py:102: in generate
+    draw_case(out/'images'/f'{fn}.png',out/'labels'/f'{fn}.txt',L,P1,x1_case,P2,x2,variant)
+generate_dataset.py:42: in draw_case
+    f=fonts(18 if style != 2 else 21, serif=style == 2)
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+generate_dataset.py:19: in fonts
+    return ImageFont.truetype(f, size)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\PIL\ImageFont.py:891: in truetype
+    return freetype(font)
+           ^^^^^^^^^^^^^^
+.venv\Lib\site-packages\PIL\ImageFont.py:888: in freetype
+    return FreeTypeFont(font, size, index, encoding, layout_engine)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <PIL.ImageFont.FreeTypeFont object at 0x000001FC1E1060D0>
+font = '/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf', size = 18, index = 0
+encoding = '', layout_engine = <Layout.BASIC: 0>
+
+    def __init__(
+        self,
+        font: StrOrBytesPath | BinaryIO,
+        size: float = 10,
+        index: int = 0,
+        encoding: str = "",
+        layout_engine: Layout | None = None,
+    ) -> None:
+        # FIXME: use service provider instead
+    
+        if isinstance(core, DeferredError):
+            raise core.ex
+    
+        if size <= 0:
+            msg = f"font size must be greater than 0, not {size}"
+            raise ValueError(msg)
+    
+        self.path = font
+        self.size = size
+        self.index = index
+        self.encoding = encoding
+    
+        if layout_engine not in (Layout.BASIC, Layout.RAQM):
+            layout_engine = Layout.BASIC
+            if core.HAVE_RAQM:
+                layout_engine = Layout.RAQM
+        elif layout_engine == Layout.RAQM and not core.HAVE_RAQM:
+            warnings.warn(
+                "Raqm layout was requested, but Raqm is not available. "
+                "Falling back to basic layout."
+            )
+            layout_engine = Layout.BASIC
+    
+        self.layout_engine = layout_engine
+    
+        def load_from_bytes(f: IO[bytes]) -> None:
+            self.font_bytes = f.read()
+            self.font = core.getfont(
+                "", size, index, encoding, self.font_bytes, layout_engine
+            )
+    
+        if is_path(font):
+            font = os.fspath(font)
+            if sys.platform == "win32":
+                font_bytes_path = font if isinstance(font, bytes) else font.encode()
+                try:
+                    font_bytes_path.decode("ascii")
+                except UnicodeDecodeError:
+                    # FreeType cannot load fonts with non-ASCII characters on Windows
+                    # So load it into memory first
+                    with open(font, "rb") as f:
+                        load_from_bytes(f)
+                    return
+>           self.font = core.getfont(
+                font, size, index, encoding, layout_engine=layout_engine
+            )
+E           OSError: cannot open resource
+
+.venv\Lib\site-packages\PIL\ImageFont.py:302: OSError
+=========================== short test summary info ===========================
+FAILED test_experiments.py::test_patches_and_model_shapes - OSError: cannot o...
+FAILED test_experiments.py::test_oracle_prediction_evaluation - OSError: cann...
+FAILED test_generator.py::test_dataset - OSError: cannot open resource
+3 failed, 1 passed in 17.59s

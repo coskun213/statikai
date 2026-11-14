@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "C:\Users\HP\Documents\Codex\2026-11-08\t\work\ocr_dev.py", line 10, in <module>
+    ocr=LocalOCR(DEFAULT_OCR_MODELS);det=SymbolReader(DEFAULT_DETECTOR)
+  File "C:\Users\HP\Documents\Codex\2026-11-08\t\outputs\StatikAI\statikai\ocr_engine.py", line 26, in __init__
+    self.engine = RapidOCR(params=self.params)
+                  ~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Documents\Codex\2026-11-08\t\work\statikai_audit\StatikAI_Codex_Hazir\.venv\Lib\site-packages\rapidocr\main.py", line 44, in __init__
+    self.cfg = self._load_config(config_path, params)
+               ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Documents\Codex\2026-11-08\t\work\statikai_audit\StatikAI_Codex_Hazir\.venv\Lib\site-packages\rapidocr\main.py", line 59, in _load_config
+    cfg = ParseParams.update_batch(cfg, params)
+  File "C:\Users\HP\Documents\Codex\2026-11-08\t\work\statikai_audit\StatikAI_Codex_Hazir\.venv\Lib\site-packages\rapidocr\utils\parse_parameters.py", line 60, in update_batch
+    raise TypeError(f"The value of {k} must be Enum Type.")
+TypeError: The value of Det.ocr_version must be Enum Type.

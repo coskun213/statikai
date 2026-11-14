@@ -1,0 +1,74 @@
+{
+  "status": "passed",
+  "passed": true,
+  "config": {
+    "arrow_head_width_ratio": 1.8,
+    "unexplained_area_fraction": 0.00012,
+    "triangle_widening_ratio": 1.6,
+    "symbol_padding_width": 0.012,
+    "support_symmetry_width": 0.004,
+    "scope": "left pin, right roller, horizontal beam, two downward point loads"
+  },
+  "arrows": [
+    {
+      "downward": true,
+      "head_width_ratio": 8.333333333333334,
+      "upper_width_px": 3.0,
+      "lower_width_px": 25.0,
+      "component_bbox": [
+        952,
+        330,
+        980,
+        453
+      ],
+      "method": "head widening at bottom of independently located vertical ink component"
+    },
+    {
+      "downward": true,
+      "head_width_ratio": 8.666666666666666,
+      "upper_width_px": 3.0,
+      "lower_width_px": 26.0,
+      "component_bbox": [
+        518,
+        330,
+        547,
+        453
+      ],
+      "method": "head widening at bottom of independently located vertical ink component"
+    }
+  ],
+  "supports": [
+    {
+      "triangle": true,
+      "triangle_widening_ratio": 4.571428571428571,
+      "left_growth_px": 12.5,
+      "right_growth_px": 12.5,
+      "roller_pair": true,
+      "circle_centers_px": [
+        [
+          1324.0,
+          525.0
+        ],
+        [
+          1289.0,
+          525.0
+        ]
+      ],
+      "method": "triangle widening and two separate circular ink components",
+      "class_id": 1
+    },
+    {
+      "triangle": true,
+      "triangle_widening_ratio": 4.571428571428571,
+      "left_growth_px": 12.5,
+      "right_growth_px": 12.5,
+      "roller_pair": false,
+      "circle_centers_px": [],
+      "method": "triangle widening and two separate circular ink components",
+      "class_id": 0
+    }
+  ],
+  "issues": [],
+  "limitation": "pixel rejection checks do not guarantee recognition of every unsupported symbol",
+  "unexplained_components_xywh": []
+}

@@ -1,0 +1,15 @@
+pillow>=10.1
+# Optional engineering-diagram text recognition: install requirements-ocr.txt.
+# RapidOCR/ONNX supplies text boxes and recognition; it does not solve statics.
+# Optional 3D desktop dependencies are in requirements-desktop.txt; old CNN unchanged.
+pytest>=8
+numpy>=1.24; platform_system != "Darwin" or platform_machine != "x86_64"
+# Intel macOS: last official PyTorch wheels use the NumPy 1.x ABI.
+numpy>=1.24,<2; platform_system == "Darwin" and platform_machine == "x86_64"
+pandas>=2
+scikit-learn>=1.3
+torch>=2.1; platform_system != "Darwin" or platform_machine != "x86_64"
+torch>=2.1,<2.3; platform_system == "Darwin" and platform_machine == "x86_64"
+# Classical full-image detector; no GUI backend required.
+opencv-python-headless>=4.8,<6; platform_system != "Darwin" or platform_machine != "x86_64"
+opencv-python-headless>=4.8,<4.12; platform_system == "Darwin" and platform_machine == "x86_64"

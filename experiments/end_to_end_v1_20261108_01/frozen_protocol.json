@@ -1,0 +1,43 @@
+{
+  "frozen_utc": "2026-11-08T20:35:19.902844+00:00",
+  "plan_sha256": "64b94c9370175bbdae9c5946da3204a354cf7ba45d9b6ac0d1f15bd69c39fad6",
+  "code_sha256": {
+    "statikai/beam_pipeline.py": "a9b24c01b288593bd136f5191c88fcec1c0dc48e789a77ab0d649bf3d3a2df2e",
+    "statikai/beam_scope.py": "d46f4947daf19658528bae586ca9f4483ed193c2f14a7224276d788d32dfa968",
+    "solve_beam_image.py": "eaa381827641a013c44a6f35c78191a31439a99269fe562bd4c637cc19ab191b",
+    "statikai_beam_app.py": "1b1222212632cca8ff057e5966539c42e037569c18c21279d74617a6c5bc4468",
+    "evaluate_beam_pipeline.py": "18cc4333190f162ca84a5ccf7beac4e449275eaf868f7a181b90d5ab94f0c696",
+    "statikai/physics.py": "5dd8a9e9a512ebd8a3ee459b848cfd59a1d01dc5bc51cd4c53322ae5b90142be",
+    "statikai/diagram_reading.py": "4d606e35f9b6fe0d569b30b7db0396338d192dcf51fb2833e49c8b8a4f3ef57b",
+    "statikai/ocr_engine.py": "c618b243dfa6dc744d8f07c8861ac501832795cdac7c13c23062dc58dca2546f",
+    "statikai/ocr_quantities.py": "aef68363ed6093137d14d8985aa808937b283cd94e43786d9a35fced8b7bafb5",
+    "statikai/symbol_reader.py": "42b7805f23366cdf4b699e0f97dea421bbce456d89e26908602dbb4e17361479",
+    "evaluate_ocr_pipeline.py": "603e186c89bb182f96769751f91ff8d038e5f8d7a419986590bd4a75831c7730"
+  },
+  "scope_config": {
+    "arrow_head_width_ratio": 1.8,
+    "unexplained_area_fraction": 0.00012,
+    "triangle_widening_ratio": 1.6,
+    "symbol_padding_width": 0.012,
+    "support_symmetry_width": 0.004,
+    "scope": "left pin, right roller, horizontal beam, two downward point loads"
+  },
+  "balance_tolerances": {
+    "force_absolute_kN": 1e-09,
+    "moment_absolute_kNm": 1e-08,
+    "relative": 1e-10
+  },
+  "detector": {
+    "model": "tiny",
+    "architecture": "TinyDetector-v1",
+    "checkpoint_sha256": "cd5224a9c9f3a08f490e673a0a272b7e816b5cadad964f5a526c8dbc6738babc",
+    "threshold": 0.35,
+    "retrained_on": "V2 train only; V2 val threshold"
+  },
+  "ocr_models": {
+    "PP-OCRv6_det_small.onnx": "090f04abcd9d9a7498bc4ebf677e4cb9bdce1fe4197ddb7e529f1ef44e1ff94f",
+    "PP-OCRv6_rec_small.onnx": "6f327246b50388f3c176ae304bd95767ea6dc0c9ae92153ef8cbe210b3c14884"
+  },
+  "validation_metrics_sha256": "4ec2fc273acd4a5d691e9eda286dc3becfec38300478f9ef835ac3fec32a7df9",
+  "decisions": "Keep train-developed scope checks; no changes based on validation or test accuracy."
+}

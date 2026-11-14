@@ -1,0 +1,1982 @@
+{
+  "lite": {
+    "tp": 1548,
+    "fp": 104,
+    "fn": 372,
+    "precision": 0.937046004842615,
+    "recall": 0.80625,
+    "f1": 0.8667413213885778,
+    "images": 520,
+    "ground_truth_objects": 1920,
+    "per_class": {
+      "pin_support": {
+        "tp": 308,
+        "fp": 2,
+        "fn": 172,
+        "precision": 0.9935483870967742,
+        "recall": 0.6416666666666667,
+        "f1": 0.779746835443038
+      },
+      "roller_support": {
+        "tp": 445,
+        "fp": 100,
+        "fn": 35,
+        "precision": 0.8165137614678899,
+        "recall": 0.9270833333333334,
+        "f1": 0.8682926829268293
+      },
+      "point_load": {
+        "tp": 795,
+        "fp": 2,
+        "fn": 165,
+        "precision": 0.9974905897114178,
+        "recall": 0.828125,
+        "f1": 0.9049516220830962
+      }
+    },
+    "mean_iou_matched_tp": 0.7764496071550189,
+    "mean_best_class_iou_all_gt": 0.6267602124890844,
+    "exact_positive_image_rate": 0.4270833333333333,
+    "negative_images": 40,
+    "negative_false_alarm_rate": 0.0,
+    "iou_075": {
+      "tp": 997,
+      "fp": 655,
+      "fn": 923,
+      "precision": 0.6035108958837773,
+      "recall": 0.5192708333333333,
+      "f1": 0.5582306830907054,
+      "images": 520,
+      "ground_truth_objects": 1920,
+      "per_class": {
+        "pin_support": {
+          "tp": 281,
+          "fp": 29,
+          "fn": 199,
+          "precision": 0.9064516129032258,
+          "recall": 0.5854166666666667,
+          "f1": 0.7113924050632912
+        },
+        "roller_support": {
+          "tp": 353,
+          "fp": 192,
+          "fn": 127,
+          "precision": 0.6477064220183486,
+          "recall": 0.7354166666666667,
+          "f1": 0.688780487804878
+        },
+        "point_load": {
+          "tp": 363,
+          "fp": 434,
+          "fn": 597,
+          "precision": 0.45545796737766625,
+          "recall": 0.378125,
+          "f1": 0.41320432555492315
+        }
+      },
+      "mean_iou_matched_tp": 0.8326661859643464,
+      "mean_best_class_iou_all_gt": 0.6267602124890844,
+      "exact_positive_image_rate": 0.08125,
+      "negative_images": 40,
+      "negative_false_alarm_rate": 0.0
+    },
+    "by_condition": {
+      "affine_scan": {
+        "tp": 306,
+        "fp": 8,
+        "fn": 14,
+        "precision": 0.9745222929936306,
+        "recall": 0.95625,
+        "f1": 0.9652996845425867,
+        "images": 80,
+        "ground_truth_objects": 320,
+        "per_class": {
+          "pin_support": {
+            "tp": 69,
+            "fp": 1,
+            "fn": 11,
+            "precision": 0.9857142857142858,
+            "recall": 0.8625,
+            "f1": 0.92
+          },
+          "roller_support": {
+            "tp": 79,
+            "fp": 6,
+            "fn": 1,
+            "precision": 0.9294117647058824,
+            "recall": 0.9875,
+            "f1": 0.9575757575757575
+          },
+          "point_load": {
+            "tp": 158,
+            "fp": 1,
+            "fn": 2,
+            "precision": 0.9937106918238994,
+            "recall": 0.9875,
+            "f1": 0.9905956112852664
+          }
+        },
+        "mean_iou_matched_tp": 0.7611776042266848,
+        "mean_best_class_iou_all_gt": 0.7308919129609817,
+        "exact_positive_image_rate": 0.8125,
+        "negative_images": 0,
+        "negative_false_alarm_rate": null
+      },
+      "beam_only": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "images": 10,
+        "ground_truth_objects": 0,
+        "per_class": {
+          "pin_support": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "roller_support": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "point_load": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "mean_iou_matched_tp": null,
+        "mean_best_class_iou_all_gt": null,
+        "exact_positive_image_rate": null,
+        "negative_images": 10,
+        "negative_false_alarm_rate": 0.0
+      },
+      "blank_paper": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "images": 10,
+        "ground_truth_objects": 0,
+        "per_class": {
+          "pin_support": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "roller_support": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "point_load": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "mean_iou_matched_tp": null,
+        "mean_best_class_iou_all_gt": null,
+        "exact_positive_image_rate": null,
+        "negative_images": 10,
+        "negative_false_alarm_rate": 0.0
+      },
+      "clean": {
+        "tp": 283,
+        "fp": 6,
+        "fn": 37,
+        "precision": 0.9792387543252595,
+        "recall": 0.884375,
+        "f1": 0.9293924466338259,
+        "images": 80,
+        "ground_truth_objects": 320,
+        "per_class": {
+          "pin_support": {
+            "tp": 64,
+            "fp": 0,
+            "fn": 16,
+            "precision": 1.0,
+            "recall": 0.8,
+            "f1": 0.8888888888888888
+          },
+          "roller_support": {
+            "tp": 77,
+            "fp": 6,
+            "fn": 3,
+            "precision": 0.927710843373494,
+            "recall": 0.9625,
+            "f1": 0.9447852760736196
+          },
+          "point_load": {
+            "tp": 142,
+            "fp": 0,
+            "fn": 18,
+            "precision": 1.0,
+            "recall": 0.8875,
+            "f1": 0.9403973509933775
+          }
+        },
+        "mean_iou_matched_tp": 0.7938123940894116,
+        "mean_best_class_iou_all_gt": 0.7020278360228236,
+        "exact_positive_image_rate": 0.5875,
+        "negative_images": 0,
+        "negative_false_alarm_rate": null
+      },
+      "dark_background": {
+        "tp": 184,
+        "fp": 34,
+        "fn": 136,
+        "precision": 0.8440366972477065,
+        "recall": 0.575,
+        "f1": 0.6840148698884758,
+        "images": 80,
+        "ground_truth_objects": 320,
+        "per_class": {
+          "pin_support": {
+            "tp": 31,
+            "fp": 1,
+            "fn": 49,
+            "precision": 0.96875,
+            "recall": 0.3875,
+            "f1": 0.5535714285714286
+          },
+          "roller_support": {
+            "tp": 62,
+            "fp": 32,
+            "fn": 18,
+            "precision": 0.6595744680851063,
+            "recall": 0.775,
+            "f1": 0.7126436781609196
+          },
+          "point_load": {
+            "tp": 91,
+            "fp": 1,
+            "fn": 69,
+            "precision": 0.9891304347826086,
+            "recall": 0.56875,
+            "f1": 0.7222222222222222
+          }
+        },
+        "mean_iou_matched_tp": 0.7086312575975129,
+        "mean_best_class_iou_all_gt": 0.4089334445214556,
+        "exact_positive_image_rate": 0.05,
+        "negative_images": 0,
+        "negative_false_alarm_rate": null
+      },
+      "drafting_grid": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "images": 10,
+        "ground_truth_objects": 0,
+        "per_class": {
+          "pin_support": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "roller_support": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "point_load": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "mean_iou_matched_tp": null,
+        "mean_best_class_iou_all_gt": null,
+        "exact_positive_image_rate": null,
+        "negative_images": 10,
+        "negative_false_alarm_rate": 0.0
+      },
+      "low_contrast": {
+        "tp": 243,
+        "fp": 37,
+        "fn": 77,
+        "precision": 0.8678571428571429,
+        "recall": 0.759375,
+        "f1": 0.81,
+        "images": 80,
+        "ground_truth_objects": 320,
+        "per_class": {
+          "pin_support": {
+            "tp": 40,
+            "fp": 0,
+            "fn": 40,
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1": 0.6666666666666666
+          },
+          "roller_support": {
+            "tp": 74,
+            "fp": 37,
+            "fn": 6,
+            "precision": 0.6666666666666666,
+            "recall": 0.925,
+            "f1": 0.774869109947644
+          },
+          "point_load": {
+            "tp": 129,
+            "fp": 0,
+            "fn": 31,
+            "precision": 1.0,
+            "recall": 0.80625,
+            "f1": 0.8927335640138409
+          }
+        },
+        "mean_iou_matched_tp": 0.7852147369922605,
+        "mean_best_class_iou_all_gt": 0.5962724409034976,
+        "exact_positive_image_rate": 0.3,
+        "negative_images": 0,
+        "negative_false_alarm_rate": null
+      },
+      "low_resolution": {
+        "tp": 255,
+        "fp": 14,
+        "fn": 65,
+        "precision": 0.9479553903345725,
+        "recall": 0.796875,
+        "f1": 0.865874363327674,
+        "images": 80,
+        "ground_truth_objects": 320,
+        "per_class": {
+          "pin_support": {
+            "tp": 39,
+            "fp": 0,
+            "fn": 41,
+            "precision": 1.0,
+            "recall": 0.4875,
+            "f1": 0.6554621848739496
+          },
+          "roller_support": {
+            "tp": 75,
+            "fp": 14,
+            "fn": 5,
+            "precision": 0.8426966292134831,
+            "recall": 0.9375,
+            "f1": 0.8875739644970414
+          },
+          "point_load": {
+            "tp": 141,
+            "fp": 0,
+            "fn": 19,
+            "precision": 1.0,
+            "recall": 0.88125,
+            "f1": 0.9368770764119602
+          }
+        },
+        "mean_iou_matched_tp": 0.7852717930971467,
+        "mean_best_class_iou_all_gt": 0.6257634601242887,
+        "exact_positive_image_rate": 0.3,
+        "negative_images": 0,
+        "negative_false_alarm_rate": null
+      },
+      "noisy_low_light": {
+        "tp": 277,
+        "fp": 5,
+        "fn": 43,
+        "precision": 0.9822695035460993,
+        "recall": 0.865625,
+        "f1": 0.920265780730897,
+        "images": 80,
+        "ground_truth_objects": 320,
+        "per_class": {
+          "pin_support": {
+            "tp": 65,
+            "fp": 0,
+            "fn": 15,
+            "precision": 1.0,
+            "recall": 0.8125,
+            "f1": 0.896551724137931
+          },
+          "roller_support": {
+            "tp": 78,
+            "fp": 5,
+            "fn": 2,
+            "precision": 0.9397590361445783,
+            "recall": 0.975,
+            "f1": 0.9570552147239264
+          },
+          "point_load": {
+            "tp": 134,
+            "fp": 0,
+            "fn": 26,
+            "precision": 1.0,
+            "recall": 0.8375,
+            "f1": 0.9115646258503401
+          }
+        },
+        "mean_iou_matched_tp": 0.8048198473951843,
+        "mean_best_class_iou_all_gt": 0.6966721804014564,
+        "exact_positive_image_rate": 0.5125,
+        "negative_images": 0,
+        "negative_false_alarm_rate": null
+      },
+      "text_dimensions": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "images": 10,
+        "ground_truth_objects": 0,
+        "per_class": {
+          "pin_support": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "roller_support": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "point_load": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "mean_iou_matched_tp": null,
+        "mean_best_class_iou_all_gt": null,
+        "exact_positive_image_rate": null,
+        "negative_images": 10,
+        "negative_false_alarm_rate": 0.0
+      }
+    },
+    "inference_seconds_including_io": 7.155048299988266
+  },
+  "tiny": {
+    "tp": 1663,
+    "fp": 98,
+    "fn": 257,
+    "precision": 0.9443498012492901,
+    "recall": 0.8661458333333333,
+    "f1": 0.9035588155392557,
+    "images": 520,
+    "ground_truth_objects": 1920,
+    "per_class": {
+      "pin_support": {
+        "tp": 436,
+        "fp": 19,
+        "fn": 44,
+        "precision": 0.9582417582417583,
+        "recall": 0.9083333333333333,
+        "f1": 0.932620320855615
+      },
+      "roller_support": {
+        "tp": 418,
+        "fp": 67,
+        "fn": 62,
+        "precision": 0.8618556701030928,
+        "recall": 0.8708333333333333,
+        "f1": 0.8663212435233161
+      },
+      "point_load": {
+        "tp": 809,
+        "fp": 12,
+        "fn": 151,
+        "precision": 0.9853836784409257,
+        "recall": 0.8427083333333333,
+        "f1": 0.9084783829309376
+      }
+    },
+    "mean_iou_matched_tp": 0.7406268924487006,
+    "mean_best_class_iou_all_gt": 0.6465957755871782,
+    "exact_positive_image_rate": 0.6666666666666666,
+    "negative_images": 40,
+    "negative_false_alarm_rate": 0.0,
+    "iou_075": {
+      "tp": 820,
+      "fp": 941,
+      "fn": 1100,
+      "precision": 0.46564452015900054,
+      "recall": 0.4270833333333333,
+      "f1": 0.44553110567780496,
+      "images": 520,
+      "ground_truth_objects": 1920,
+      "per_class": {
+        "pin_support": {
+          "tp": 298,
+          "fp": 157,
+          "fn": 182,
+          "precision": 0.654945054945055,
+          "recall": 0.6208333333333333,
+          "f1": 0.6374331550802139
+        },
+        "roller_support": {
+          "tp": 208,
+          "fp": 277,
+          "fn": 272,
+          "precision": 0.4288659793814433,
+          "recall": 0.43333333333333335,
+          "f1": 0.4310880829015544
+        },
+        "point_load": {
+          "tp": 314,
+          "fp": 507,
+          "fn": 646,
+          "precision": 0.38246041412911086,
+          "recall": 0.32708333333333334,
+          "f1": 0.3526108927568782
+        }
+      },
+      "mean_iou_matched_tp": 0.8154394512455396,
+      "mean_best_class_iou_all_gt": 0.6465957755871782,
+      "exact_positive_image_rate": 0.04375,
+      "negative_images": 40,
+      "negative_false_alarm_rate": 0.0
+    },
+    "by_condition": {
+      "affine_scan": {
+        "tp": 317,
+        "fp": 3,
+        "fn": 3,
+        "precision": 0.990625,
+        "recall": 0.990625,
+        "f1": 0.990625,
+        "images": 80,
+        "ground_truth_objects": 320,
+        "per_class": {
+          "pin_support": {
+            "tp": 79,
+            "fp": 0,
+            "fn": 1,
+            "precision": 1.0,
+            "recall": 0.9875,
+            "f1": 0.9937106918238994
+          },
+          "roller_support": {
+            "tp": 80,
+            "fp": 1,
+            "fn": 0,
+            "precision": 0.9876543209876543,
+            "recall": 1.0,
+            "f1": 0.9937888198757764
+          },
+          "point_load": {
+            "tp": 158,
+            "fp": 2,
+            "fn": 2,
+            "precision": 0.9875,
+            "recall": 0.9875,
+            "f1": 0.9875
+          }
+        },
+        "mean_iou_matched_tp": 0.7292523157404809,
+        "mean_best_class_iou_all_gt": 0.7254498366927489,
+        "exact_positive_image_rate": 0.95,
+        "negative_images": 0,
+        "negative_false_alarm_rate": null
+      },
+      "beam_only": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "images": 10,
+        "ground_truth_objects": 0,
+        "per_class": {
+          "pin_support": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "roller_support": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "point_load": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "mean_iou_matched_tp": null,
+        "mean_best_class_iou_all_gt": null,
+        "exact_positive_image_rate": null,
+        "negative_images": 10,
+        "negative_false_alarm_rate": 0.0
+      },
+      "blank_paper": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "images": 10,
+        "ground_truth_objects": 0,
+        "per_class": {
+          "pin_support": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "roller_support": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "point_load": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "mean_iou_matched_tp": null,
+        "mean_best_class_iou_all_gt": null,
+        "exact_positive_image_rate": null,
+        "negative_images": 10,
+        "negative_false_alarm_rate": 0.0
+      },
+      "clean": {
+        "tp": 313,
+        "fp": 4,
+        "fn": 7,
+        "precision": 0.9873817034700315,
+        "recall": 0.978125,
+        "f1": 0.9827315541601256,
+        "images": 80,
+        "ground_truth_objects": 320,
+        "per_class": {
+          "pin_support": {
+            "tp": 80,
+            "fp": 1,
+            "fn": 0,
+            "precision": 0.9876543209876543,
+            "recall": 1.0,
+            "f1": 0.9937888198757764
+          },
+          "roller_support": {
+            "tp": 76,
+            "fp": 1,
+            "fn": 4,
+            "precision": 0.987012987012987,
+            "recall": 0.95,
+            "f1": 0.9681528662420382
+          },
+          "point_load": {
+            "tp": 157,
+            "fp": 2,
+            "fn": 3,
+            "precision": 0.9874213836477987,
+            "recall": 0.98125,
+            "f1": 0.9843260188087775
+          }
+        },
+        "mean_iou_matched_tp": 0.7666340155700694,
+        "mean_best_class_iou_all_gt": 0.7543888311166732,
+        "exact_positive_image_rate": 0.9125,
+        "negative_images": 0,
+        "negative_false_alarm_rate": null
+      },
+      "dark_background": {
+        "tp": 308,
+        "fp": 33,
+        "fn": 12,
+        "precision": 0.9032258064516129,
+        "recall": 0.9625,
+        "f1": 0.9319213313161876,
+        "images": 80,
+        "ground_truth_objects": 320,
+        "per_class": {
+          "pin_support": {
+            "tp": 77,
+            "fp": 7,
+            "fn": 3,
+            "precision": 0.9166666666666666,
+            "recall": 0.9625,
+            "f1": 0.9390243902439024
+          },
+          "roller_support": {
+            "tp": 72,
+            "fp": 26,
+            "fn": 8,
+            "precision": 0.7346938775510204,
+            "recall": 0.9,
+            "f1": 0.8089887640449438
+          },
+          "point_load": {
+            "tp": 159,
+            "fp": 0,
+            "fn": 1,
+            "precision": 1.0,
+            "recall": 0.99375,
+            "f1": 0.9968652037617555
+          }
+        },
+        "mean_iou_matched_tp": 0.7262366697043268,
+        "mean_best_class_iou_all_gt": 0.7060650346187333,
+        "exact_positive_image_rate": 0.5875,
+        "negative_images": 0,
+        "negative_false_alarm_rate": null
+      },
+      "drafting_grid": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "images": 10,
+        "ground_truth_objects": 0,
+        "per_class": {
+          "pin_support": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "roller_support": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "point_load": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "mean_iou_matched_tp": null,
+        "mean_best_class_iou_all_gt": null,
+        "exact_positive_image_rate": null,
+        "negative_images": 10,
+        "negative_false_alarm_rate": 0.0
+      },
+      "low_contrast": {
+        "tp": 308,
+        "fp": 23,
+        "fn": 12,
+        "precision": 0.9305135951661632,
+        "recall": 0.9625,
+        "f1": 0.946236559139785,
+        "images": 80,
+        "ground_truth_objects": 320,
+        "per_class": {
+          "pin_support": {
+            "tp": 74,
+            "fp": 0,
+            "fn": 6,
+            "precision": 1.0,
+            "recall": 0.925,
+            "f1": 0.961038961038961
+          },
+          "roller_support": {
+            "tp": 75,
+            "fp": 22,
+            "fn": 5,
+            "precision": 0.7731958762886598,
+            "recall": 0.9375,
+            "f1": 0.847457627118644
+          },
+          "point_load": {
+            "tp": 159,
+            "fp": 1,
+            "fn": 1,
+            "precision": 0.99375,
+            "recall": 0.99375,
+            "f1": 0.99375
+          }
+        },
+        "mean_iou_matched_tp": 0.7434103778306164,
+        "mean_best_class_iou_all_gt": 0.7169691361582012,
+        "exact_positive_image_rate": 0.675,
+        "negative_images": 0,
+        "negative_false_alarm_rate": null
+      },
+      "low_resolution": {
+        "tp": 311,
+        "fp": 3,
+        "fn": 9,
+        "precision": 0.9904458598726115,
+        "recall": 0.971875,
+        "f1": 0.9810725552050473,
+        "images": 80,
+        "ground_truth_objects": 320,
+        "per_class": {
+          "pin_support": {
+            "tp": 80,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "roller_support": {
+            "tp": 76,
+            "fp": 3,
+            "fn": 4,
+            "precision": 0.9620253164556962,
+            "recall": 0.95,
+            "f1": 0.9559748427672956
+          },
+          "point_load": {
+            "tp": 155,
+            "fp": 0,
+            "fn": 5,
+            "precision": 1.0,
+            "recall": 0.96875,
+            "f1": 0.9841269841269841
+          }
+        },
+        "mean_iou_matched_tp": 0.7603381007300125,
+        "mean_best_class_iou_all_gt": 0.7389535916469809,
+        "exact_positive_image_rate": 0.8625,
+        "negative_images": 0,
+        "negative_false_alarm_rate": null
+      },
+      "noisy_low_light": {
+        "tp": 106,
+        "fp": 32,
+        "fn": 214,
+        "precision": 0.7681159420289855,
+        "recall": 0.33125,
+        "f1": 0.462882096069869,
+        "images": 80,
+        "ground_truth_objects": 320,
+        "per_class": {
+          "pin_support": {
+            "tp": 46,
+            "fp": 11,
+            "fn": 34,
+            "precision": 0.8070175438596491,
+            "recall": 0.575,
+            "f1": 0.6715328467153284
+          },
+          "roller_support": {
+            "tp": 39,
+            "fp": 14,
+            "fn": 41,
+            "precision": 0.7358490566037735,
+            "recall": 0.4875,
+            "f1": 0.5864661654135338
+          },
+          "point_load": {
+            "tp": 21,
+            "fp": 7,
+            "fn": 139,
+            "precision": 0.75,
+            "recall": 0.13125,
+            "f1": 0.22340425531914893
+          }
+        },
+        "mean_iou_matched_tp": 0.6737419925587591,
+        "mean_best_class_iou_all_gt": 0.23774822328973433,
+        "exact_positive_image_rate": 0.0125,
+        "negative_images": 0,
+        "negative_false_alarm_rate": null
+      },
+      "text_dimensions": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "images": 10,
+        "ground_truth_objects": 0,
+        "per_class": {
+          "pin_support": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "roller_support": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "point_load": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "mean_iou_matched_tp": null,
+        "mean_best_class_iou_all_gt": null,
+        "exact_positive_image_rate": null,
+        "negative_images": 10,
+        "negative_false_alarm_rate": 0.0
+      }
+    },
+    "inference_seconds_including_io": 3.607929999998305
+  },
+  "original_tiny": {
+    "tp": 634,
+    "fp": 326,
+    "fn": 1286,
+    "precision": 0.6604166666666667,
+    "recall": 0.3302083333333333,
+    "f1": 0.44027777777777777,
+    "images": 520,
+    "ground_truth_objects": 1920,
+    "per_class": {
+      "pin_support": {
+        "tp": 99,
+        "fp": 146,
+        "fn": 381,
+        "precision": 0.40408163265306124,
+        "recall": 0.20625,
+        "f1": 0.2731034482758621
+      },
+      "roller_support": {
+        "tp": 13,
+        "fp": 92,
+        "fn": 467,
+        "precision": 0.12380952380952381,
+        "recall": 0.027083333333333334,
+        "f1": 0.044444444444444446
+      },
+      "point_load": {
+        "tp": 522,
+        "fp": 88,
+        "fn": 438,
+        "precision": 0.8557377049180328,
+        "recall": 0.54375,
+        "f1": 0.664968152866242
+      }
+    },
+    "mean_iou_matched_tp": 0.6639437714606184,
+    "mean_best_class_iou_all_gt": 0.24941042809167194,
+    "exact_positive_image_rate": 0.022916666666666665,
+    "negative_images": 40,
+    "negative_false_alarm_rate": 0.0,
+    "iou_075": {
+      "tp": 132,
+      "fp": 828,
+      "fn": 1788,
+      "precision": 0.1375,
+      "recall": 0.06875,
+      "f1": 0.09166666666666666,
+      "images": 520,
+      "ground_truth_objects": 1920,
+      "per_class": {
+        "pin_support": {
+          "tp": 13,
+          "fp": 232,
+          "fn": 467,
+          "precision": 0.053061224489795916,
+          "recall": 0.027083333333333334,
+          "f1": 0.03586206896551724
+        },
+        "roller_support": {
+          "tp": 1,
+          "fp": 104,
+          "fn": 479,
+          "precision": 0.009523809523809525,
+          "recall": 0.0020833333333333333,
+          "f1": 0.003418803418803419
+        },
+        "point_load": {
+          "tp": 118,
+          "fp": 492,
+          "fn": 842,
+          "precision": 0.19344262295081968,
+          "recall": 0.12291666666666666,
+          "f1": 0.1503184713375796
+        }
+      },
+      "mean_iou_matched_tp": 0.8125927671024582,
+      "mean_best_class_iou_all_gt": 0.24941042809167194,
+      "exact_positive_image_rate": 0.0,
+      "negative_images": 40,
+      "negative_false_alarm_rate": 0.0
+    },
+    "by_condition": {
+      "affine_scan": {
+        "tp": 166,
+        "fp": 98,
+        "fn": 154,
+        "precision": 0.6287878787878788,
+        "recall": 0.51875,
+        "f1": 0.5684931506849316,
+        "images": 80,
+        "ground_truth_objects": 320,
+        "per_class": {
+          "pin_support": {
+            "tp": 20,
+            "fp": 44,
+            "fn": 60,
+            "precision": 0.3125,
+            "recall": 0.25,
+            "f1": 0.2777777777777778
+          },
+          "roller_support": {
+            "tp": 3,
+            "fp": 30,
+            "fn": 77,
+            "precision": 0.09090909090909091,
+            "recall": 0.0375,
+            "f1": 0.05309734513274336
+          },
+          "point_load": {
+            "tp": 143,
+            "fp": 24,
+            "fn": 17,
+            "precision": 0.8562874251497006,
+            "recall": 0.89375,
+            "f1": 0.8746177370030581
+          }
+        },
+        "mean_iou_matched_tp": 0.6555869785940877,
+        "mean_best_class_iou_all_gt": 0.39545792121011036,
+        "exact_positive_image_rate": 0.0375,
+        "negative_images": 0,
+        "negative_false_alarm_rate": null
+      },
+      "beam_only": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "images": 10,
+        "ground_truth_objects": 0,
+        "per_class": {
+          "pin_support": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "roller_support": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "point_load": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "mean_iou_matched_tp": null,
+        "mean_best_class_iou_all_gt": null,
+        "exact_positive_image_rate": null,
+        "negative_images": 10,
+        "negative_false_alarm_rate": 0.0
+      },
+      "blank_paper": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "images": 10,
+        "ground_truth_objects": 0,
+        "per_class": {
+          "pin_support": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "roller_support": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "point_load": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "mean_iou_matched_tp": null,
+        "mean_best_class_iou_all_gt": null,
+        "exact_positive_image_rate": null,
+        "negative_images": 10,
+        "negative_false_alarm_rate": 0.0
+      },
+      "clean": {
+        "tp": 180,
+        "fp": 84,
+        "fn": 140,
+        "precision": 0.6818181818181818,
+        "recall": 0.5625,
+        "f1": 0.6164383561643836,
+        "images": 80,
+        "ground_truth_objects": 320,
+        "per_class": {
+          "pin_support": {
+            "tp": 27,
+            "fp": 37,
+            "fn": 53,
+            "precision": 0.421875,
+            "recall": 0.3375,
+            "f1": 0.375
+          },
+          "roller_support": {
+            "tp": 7,
+            "fp": 27,
+            "fn": 73,
+            "precision": 0.20588235294117646,
+            "recall": 0.0875,
+            "f1": 0.12280701754385964
+          },
+          "point_load": {
+            "tp": 146,
+            "fp": 20,
+            "fn": 14,
+            "precision": 0.8795180722891566,
+            "recall": 0.9125,
+            "f1": 0.8957055214723927
+          }
+        },
+        "mean_iou_matched_tp": 0.6842477331024135,
+        "mean_best_class_iou_all_gt": 0.42261166236906106,
+        "exact_positive_image_rate": 0.0625,
+        "negative_images": 0,
+        "negative_false_alarm_rate": null
+      },
+      "dark_background": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 320,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "images": 80,
+        "ground_truth_objects": 320,
+        "per_class": {
+          "pin_support": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 80,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "roller_support": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 80,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "point_load": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 160,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "mean_iou_matched_tp": null,
+        "mean_best_class_iou_all_gt": 0.0,
+        "exact_positive_image_rate": 0.0,
+        "negative_images": 0,
+        "negative_false_alarm_rate": null
+      },
+      "drafting_grid": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "images": 10,
+        "ground_truth_objects": 0,
+        "per_class": {
+          "pin_support": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "roller_support": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "point_load": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "mean_iou_matched_tp": null,
+        "mean_best_class_iou_all_gt": null,
+        "exact_positive_image_rate": null,
+        "negative_images": 10,
+        "negative_false_alarm_rate": 0.0
+      },
+      "low_contrast": {
+        "tp": 105,
+        "fp": 43,
+        "fn": 215,
+        "precision": 0.7094594594594594,
+        "recall": 0.328125,
+        "f1": 0.44871794871794873,
+        "images": 80,
+        "ground_truth_objects": 320,
+        "per_class": {
+          "pin_support": {
+            "tp": 14,
+            "fp": 16,
+            "fn": 66,
+            "precision": 0.4666666666666667,
+            "recall": 0.175,
+            "f1": 0.2545454545454545
+          },
+          "roller_support": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 80,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "point_load": {
+            "tp": 91,
+            "fp": 27,
+            "fn": 69,
+            "precision": 0.7711864406779662,
+            "recall": 0.56875,
+            "f1": 0.6546762589928058
+          }
+        },
+        "mean_iou_matched_tp": 0.6330447796509717,
+        "mean_best_class_iou_all_gt": 0.24702360323180517,
+        "exact_positive_image_rate": 0.0,
+        "negative_images": 0,
+        "negative_false_alarm_rate": null
+      },
+      "low_resolution": {
+        "tp": 170,
+        "fp": 84,
+        "fn": 150,
+        "precision": 0.6692913385826772,
+        "recall": 0.53125,
+        "f1": 0.5923344947735192,
+        "images": 80,
+        "ground_truth_objects": 320,
+        "per_class": {
+          "pin_support": {
+            "tp": 25,
+            "fp": 36,
+            "fn": 55,
+            "precision": 0.4098360655737705,
+            "recall": 0.3125,
+            "f1": 0.3546099290780142
+          },
+          "roller_support": {
+            "tp": 3,
+            "fp": 31,
+            "fn": 77,
+            "precision": 0.08823529411764706,
+            "recall": 0.0375,
+            "f1": 0.05263157894736842
+          },
+          "point_load": {
+            "tp": 142,
+            "fp": 17,
+            "fn": 18,
+            "precision": 0.8930817610062893,
+            "recall": 0.8875,
+            "f1": 0.890282131661442
+          }
+        },
+        "mean_iou_matched_tp": 0.6711939286891461,
+        "mean_best_class_iou_all_gt": 0.4021737665971914,
+        "exact_positive_image_rate": 0.0375,
+        "negative_images": 0,
+        "negative_false_alarm_rate": null
+      },
+      "noisy_low_light": {
+        "tp": 13,
+        "fp": 17,
+        "fn": 307,
+        "precision": 0.43333333333333335,
+        "recall": 0.040625,
+        "f1": 0.07428571428571429,
+        "images": 80,
+        "ground_truth_objects": 320,
+        "per_class": {
+          "pin_support": {
+            "tp": 13,
+            "fp": 13,
+            "fn": 67,
+            "precision": 0.5,
+            "recall": 0.1625,
+            "f1": 0.24528301886792453
+          },
+          "roller_support": {
+            "tp": 0,
+            "fp": 4,
+            "fn": 80,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "point_load": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 160,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "mean_iou_matched_tp": 0.6442808431132486,
+        "mean_best_class_iou_all_gt": 0.02919561514186378,
+        "exact_positive_image_rate": 0.0,
+        "negative_images": 0,
+        "negative_false_alarm_rate": null
+      },
+      "text_dimensions": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "images": 10,
+        "ground_truth_objects": 0,
+        "per_class": {
+          "pin_support": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "roller_support": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "point_load": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "mean_iou_matched_tp": null,
+        "mean_best_class_iou_all_gt": null,
+        "exact_positive_image_rate": null,
+        "negative_images": 10,
+        "negative_false_alarm_rate": 0.0
+      }
+    },
+    "inference_seconds_including_io": 3.6680420999764465
+  },
+  "opencv": {
+    "tp": 392,
+    "fp": 37,
+    "fn": 1528,
+    "precision": 0.9137529137529138,
+    "recall": 0.20416666666666666,
+    "f1": 0.3337590464027246,
+    "images": 520,
+    "ground_truth_objects": 1920,
+    "per_class": {
+      "pin_support": {
+        "tp": 25,
+        "fp": 35,
+        "fn": 455,
+        "precision": 0.4166666666666667,
+        "recall": 0.052083333333333336,
+        "f1": 0.09259259259259259
+      },
+      "roller_support": {
+        "tp": 2,
+        "fp": 2,
+        "fn": 478,
+        "precision": 0.5,
+        "recall": 0.004166666666666667,
+        "f1": 0.008264462809917356
+      },
+      "point_load": {
+        "tp": 365,
+        "fp": 0,
+        "fn": 595,
+        "precision": 1.0,
+        "recall": 0.3802083333333333,
+        "f1": 0.5509433962264151
+      }
+    },
+    "mean_iou_matched_tp": 0.8821751944065273,
+    "mean_best_class_iou_all_gt": 0.18101233937492847,
+    "exact_positive_image_rate": 0.0,
+    "negative_images": 40,
+    "negative_false_alarm_rate": 0.0,
+    "iou_075": {
+      "tp": 374,
+      "fp": 55,
+      "fn": 1546,
+      "precision": 0.8717948717948718,
+      "recall": 0.19479166666666667,
+      "f1": 0.31843337590464027,
+      "images": 520,
+      "ground_truth_objects": 1920,
+      "per_class": {
+        "pin_support": {
+          "tp": 10,
+          "fp": 50,
+          "fn": 470,
+          "precision": 0.16666666666666666,
+          "recall": 0.020833333333333332,
+          "f1": 0.037037037037037035
+        },
+        "roller_support": {
+          "tp": 1,
+          "fp": 3,
+          "fn": 479,
+          "precision": 0.25,
+          "recall": 0.0020833333333333333,
+          "f1": 0.004132231404958678
+        },
+        "point_load": {
+          "tp": 363,
+          "fp": 2,
+          "fn": 597,
+          "precision": 0.9945205479452055,
+          "recall": 0.378125,
+          "f1": 0.5479245283018868
+        }
+      },
+      "mean_iou_matched_tp": 0.896043389884126,
+      "mean_best_class_iou_all_gt": 0.18101233937492847,
+      "exact_positive_image_rate": 0.0,
+      "negative_images": 40,
+      "negative_false_alarm_rate": 0.0
+    },
+    "by_condition": {
+      "affine_scan": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 320,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "images": 80,
+        "ground_truth_objects": 320,
+        "per_class": {
+          "pin_support": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 80,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "roller_support": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 80,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "point_load": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 160,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "mean_iou_matched_tp": null,
+        "mean_best_class_iou_all_gt": 0.0,
+        "exact_positive_image_rate": 0.0,
+        "negative_images": 0,
+        "negative_false_alarm_rate": null
+      },
+      "beam_only": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "images": 10,
+        "ground_truth_objects": 0,
+        "per_class": {
+          "pin_support": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "roller_support": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "point_load": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "mean_iou_matched_tp": null,
+        "mean_best_class_iou_all_gt": null,
+        "exact_positive_image_rate": null,
+        "negative_images": 10,
+        "negative_false_alarm_rate": 0.0
+      },
+      "blank_paper": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "images": 10,
+        "ground_truth_objects": 0,
+        "per_class": {
+          "pin_support": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "roller_support": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "point_load": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "mean_iou_matched_tp": null,
+        "mean_best_class_iou_all_gt": null,
+        "exact_positive_image_rate": null,
+        "negative_images": 10,
+        "negative_false_alarm_rate": 0.0
+      },
+      "clean": {
+        "tp": 151,
+        "fp": 5,
+        "fn": 169,
+        "precision": 0.967948717948718,
+        "recall": 0.471875,
+        "f1": 0.634453781512605,
+        "images": 80,
+        "ground_truth_objects": 320,
+        "per_class": {
+          "pin_support": {
+            "tp": 5,
+            "fp": 5,
+            "fn": 75,
+            "precision": 0.5,
+            "recall": 0.0625,
+            "f1": 0.1111111111111111
+          },
+          "roller_support": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 80,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "point_load": {
+            "tp": 146,
+            "fp": 0,
+            "fn": 14,
+            "precision": 1.0,
+            "recall": 0.9125,
+            "f1": 0.954248366013072
+          }
+        },
+        "mean_iou_matched_tp": 0.8836969755362366,
+        "mean_best_class_iou_all_gt": 0.41699451033116164,
+        "exact_positive_image_rate": 0.0,
+        "negative_images": 0,
+        "negative_false_alarm_rate": null
+      },
+      "dark_background": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 320,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "images": 80,
+        "ground_truth_objects": 320,
+        "per_class": {
+          "pin_support": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 80,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "roller_support": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 80,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "point_load": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 160,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "mean_iou_matched_tp": null,
+        "mean_best_class_iou_all_gt": 0.0,
+        "exact_positive_image_rate": 0.0,
+        "negative_images": 0,
+        "negative_false_alarm_rate": null
+      },
+      "drafting_grid": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "images": 10,
+        "ground_truth_objects": 0,
+        "per_class": {
+          "pin_support": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "roller_support": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "point_load": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "mean_iou_matched_tp": null,
+        "mean_best_class_iou_all_gt": null,
+        "exact_positive_image_rate": null,
+        "negative_images": 10,
+        "negative_false_alarm_rate": 0.0
+      },
+      "low_contrast": {
+        "tp": 151,
+        "fp": 5,
+        "fn": 169,
+        "precision": 0.967948717948718,
+        "recall": 0.471875,
+        "f1": 0.634453781512605,
+        "images": 80,
+        "ground_truth_objects": 320,
+        "per_class": {
+          "pin_support": {
+            "tp": 5,
+            "fp": 5,
+            "fn": 75,
+            "precision": 0.5,
+            "recall": 0.0625,
+            "f1": 0.1111111111111111
+          },
+          "roller_support": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 80,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "point_load": {
+            "tp": 146,
+            "fp": 0,
+            "fn": 14,
+            "precision": 1.0,
+            "recall": 0.9125,
+            "f1": 0.954248366013072
+          }
+        },
+        "mean_iou_matched_tp": 0.8836969755362366,
+        "mean_best_class_iou_all_gt": 0.41699451033116164,
+        "exact_positive_image_rate": 0.0,
+        "negative_images": 0,
+        "negative_false_alarm_rate": null
+      },
+      "low_resolution": {
+        "tp": 5,
+        "fp": 4,
+        "fn": 315,
+        "precision": 0.5555555555555556,
+        "recall": 0.015625,
+        "f1": 0.030395136778115502,
+        "images": 80,
+        "ground_truth_objects": 320,
+        "per_class": {
+          "pin_support": {
+            "tp": 1,
+            "fp": 3,
+            "fn": 79,
+            "precision": 0.25,
+            "recall": 0.0125,
+            "f1": 0.023809523809523808
+          },
+          "roller_support": {
+            "tp": 2,
+            "fp": 1,
+            "fn": 78,
+            "precision": 0.6666666666666666,
+            "recall": 0.025,
+            "f1": 0.04819277108433735
+          },
+          "point_load": {
+            "tp": 2,
+            "fp": 0,
+            "fn": 158,
+            "precision": 1.0,
+            "recall": 0.0125,
+            "f1": 0.024691358024691357
+          }
+        },
+        "mean_iou_matched_tp": 0.7297828080082411,
+        "mean_best_class_iou_all_gt": 0.011402856375128768,
+        "exact_positive_image_rate": 0.0,
+        "negative_images": 0,
+        "negative_false_alarm_rate": null
+      },
+      "noisy_low_light": {
+        "tp": 85,
+        "fp": 23,
+        "fn": 235,
+        "precision": 0.7870370370370371,
+        "recall": 0.265625,
+        "f1": 0.397196261682243,
+        "images": 80,
+        "ground_truth_objects": 320,
+        "per_class": {
+          "pin_support": {
+            "tp": 14,
+            "fp": 22,
+            "fn": 66,
+            "precision": 0.3888888888888889,
+            "recall": 0.175,
+            "f1": 0.2413793103448276
+          },
+          "roller_support": {
+            "tp": 0,
+            "fp": 1,
+            "fn": 80,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "point_load": {
+            "tp": 71,
+            "fp": 0,
+            "fn": 89,
+            "precision": 1.0,
+            "recall": 0.44375,
+            "f1": 0.6147186147186147
+          }
+        },
+        "mean_iou_matched_tp": 0.8857326535926348,
+        "mean_best_class_iou_all_gt": 0.24068215921211972,
+        "exact_positive_image_rate": 0.0,
+        "negative_images": 0,
+        "negative_false_alarm_rate": null
+      },
+      "text_dimensions": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "images": 10,
+        "ground_truth_objects": 0,
+        "per_class": {
+          "pin_support": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "roller_support": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "point_load": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "mean_iou_matched_tp": null,
+        "mean_best_class_iou_all_gt": null,
+        "exact_positive_image_rate": null,
+        "negative_images": 10,
+        "negative_false_alarm_rate": 0.0
+      }
+    },
+    "inference_seconds_including_io": 3.9010664999950677
+  }
+}

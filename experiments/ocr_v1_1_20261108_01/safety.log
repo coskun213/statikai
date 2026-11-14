@@ -1,0 +1,56 @@
+{
+  "status": "BAŞARILI",
+  "actual_ocr": true,
+  "training_image_copy_only": true,
+  "cases": [
+    {
+      "case": "erased_force",
+      "status": "BAŞARILI",
+      "expected": "review required, no complete input and no static solution",
+      "observed_issues": [
+        "missing_force_text"
+      ]
+    },
+    {
+      "case": "unsupported_force_unit",
+      "status": "BAŞARILI",
+      "expected": "review required, no complete input and no static solution",
+      "observed_issues": [
+        "unsupported_unit",
+        "missing_force_text"
+      ]
+    },
+    {
+      "case": "contradictory_total",
+      "status": "BAŞARILI",
+      "expected": "review required, no complete input and no static solution",
+      "observed_issues": [
+        "contradictory_dimensions"
+      ]
+    },
+    {
+      "case": "erased_dimensions",
+      "status": "BAŞARILI",
+      "expected": "review required, no complete input and no static solution",
+      "observed_issues": [
+        "incomplete_dimension_chain"
+      ]
+    },
+    {
+      "case": "wrong_dimension_unit",
+      "status": "BAŞARILI",
+      "expected": "review required, no complete input and no static solution",
+      "observed_issues": [
+        "unsupported_unit"
+      ]
+    },
+    {
+      "case": "extra_force_text",
+      "status": "BAŞARILI",
+      "expected": "review required, no complete input and no static solution",
+      "observed_issues": [
+        "missing_force_text"
+      ]
+    }
+  ]
+}

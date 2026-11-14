@@ -1,0 +1,217 @@
+{
+  "status": "BAŞARILI",
+  "measurement_completed": true,
+  "phase": "test",
+  "counts": {
+    "automatic_correct": 110,
+    "images": 120,
+    "review_required": 10
+  },
+  "primary_distinct_problems": {
+    "total": 30,
+    "automatic_correct": 27,
+    "review_required": 3
+  },
+  "families": {
+    "total": 30,
+    "all_layouts_correct": 20
+  },
+  "automatic_correct_rate": 0.9166666666666666,
+  "review_rate": 0.08333333333333333,
+  "wrong_result_rate": 0.0,
+  "reaction_max_abs_error_published_kN": 3.552713678800501e-15,
+  "stage_counts": {
+    "image": {
+      "passed": 120
+    },
+    "detection": {
+      "passed": 119,
+      "review_required": 1
+    },
+    "ocr": {
+      "passed": 113,
+      "review_required": 7
+    },
+    "geometry": {
+      "passed": 113,
+      "review_required": 7
+    },
+    "scope": {
+      "passed": 115,
+      "review_required": 5
+    },
+    "validation": {
+      "passed": 110,
+      "review_required": 10
+    },
+    "statics": {
+      "passed": 110,
+      "not_run": 10
+    },
+    "equilibrium": {
+      "passed": 110,
+      "not_run": 10
+    }
+  },
+  "detector_metrics": {
+    "tp": 480,
+    "fp": 1,
+    "fn": 0,
+    "precision": 0.997920997920998,
+    "recall": 1.0,
+    "f1": 0.9989594172736732,
+    "images": 120,
+    "ground_truth_objects": 480,
+    "per_class": {
+      "pin_support": {
+        "tp": 120,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "roller_support": {
+        "tp": 120,
+        "fp": 1,
+        "fn": 0,
+        "precision": 0.9917355371900827,
+        "recall": 1.0,
+        "f1": 0.995850622406639
+      },
+      "point_load": {
+        "tp": 240,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      }
+    },
+    "mean_iou_matched_tp": 0.8215397562332837,
+    "mean_best_class_iou_all_gt": 0.8215397562332832,
+    "exact_positive_image_rate": 0.9916666666666667,
+    "negative_images": 0,
+    "negative_false_alarm_rate": null
+  },
+  "ocr_and_geometry_metrics": {
+    "counts": {
+      "ocr_gt": 870,
+      "ocr_predictions": 1328,
+      "ocr_matched": 869,
+      "ocr_matched_iou50": 586,
+      "ocr_exact": 862,
+      "quantity_gt": 630,
+      "quantity_matched": 630,
+      "quantity_correct_si": 623,
+      "quantity_usable_correct_si": 623,
+      "unit_correct": 623,
+      "force_gt": 240,
+      "force_eligible": 240,
+      "force_assignments": 238,
+      "force_link_correct": 238,
+      "force_eligible_link_correct": 238,
+      "force_value_and_link_correct": 238,
+      "images": 120,
+      "accepted_images": 113,
+      "full_correct": 113,
+      "accepted_wrong": 0,
+      "reviewed_images": 7,
+      "L_m_available": 116,
+      "L_m_correct": 116,
+      "P1_kN_available": 119,
+      "P1_kN_correct": 119,
+      "x1_m_available": 116,
+      "x1_m_correct": 116,
+      "P2_kN_available": 119,
+      "P2_kN_correct": 119,
+      "x2_m_available": 116,
+      "x2_m_correct": 116
+    },
+    "metrics": {
+      "ocr_text_detection_precision_iou30": 0.6543674698795181,
+      "ocr_text_detection_recall_iou30": 0.9988505747126437,
+      "ocr_text_detection_recall_iou50": 0.6735632183908046,
+      "ocr_exact_text_recall": 0.9908045977011494,
+      "ocr_quantity_correct_si_all_gt": 0.9888888888888889,
+      "ocr_quantity_usable_correct_si_all_gt": 0.9888888888888889,
+      "ocr_quantity_correct_si_when_localized": 0.9888888888888889,
+      "ocr_unit_correct_all_gt": 0.9888888888888889,
+      "force_text_link_correct_all_forces": 0.9916666666666667,
+      "force_text_link_correct_eligible": 0.9916666666666667,
+      "force_text_value_and_link_correct_all_forces": 0.9916666666666667,
+      "full_correct_problem_rate": 0.9416666666666667,
+      "complete_extraction_coverage": 0.9416666666666667,
+      "accepted_but_wrong_rate": 0.0,
+      "accepted_precision": 1.0,
+      "review_rate": 0.058333333333333334,
+      "fields": {
+        "L_m": {
+          "coverage": 0.9666666666666667,
+          "correct_all": 0.9666666666666667
+        },
+        "P1_kN": {
+          "coverage": 0.9916666666666667,
+          "correct_all": 0.9916666666666667
+        },
+        "x1_m": {
+          "coverage": 0.9666666666666667,
+          "correct_all": 0.9666666666666667
+        },
+        "P2_kN": {
+          "coverage": 0.9916666666666667,
+          "correct_all": 0.9916666666666667
+        },
+        "x2_m": {
+          "coverage": 0.9666666666666667,
+          "correct_all": 0.9666666666666667
+        }
+      }
+    }
+  },
+  "issues": {
+    "extraction_requires_review": 7,
+    "scope_requires_review": 5,
+    "missing_inputs": 7,
+    "missing_unit": 7,
+    "incomplete_dimension_chain": 6,
+    "support_type_unverified": 4,
+    "symbol_inventory": 1,
+    "unsupported_symbol_inventory": 1
+  },
+  "elapsed_seconds": 70.89313059998676,
+  "python": "3.13.12 (tags/v3.13.12:1cbe481, Feb  3 2026, 18:22:25) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "detector": {
+    "model": "tiny",
+    "architecture": "TinyDetector-v1",
+    "checkpoint_sha256": "cd5224a9c9f3a08f490e673a0a272b7e816b5cadad964f5a526c8dbc6738babc",
+    "threshold": 0.35,
+    "retrained_on": "V2 train only; V2 val threshold"
+  },
+  "ocr_engine": {
+    "backend": "RapidOCR / ONNX Runtime CPU",
+    "pretrained": true,
+    "rapidocr_version": "3.10.0",
+    "onnxruntime_version": "1.31.1",
+    "parameters": {
+      "Global.model_root_dir": "C:\\Users\\HP\\Documents\\Codex\\2026-11-08\\t\\outputs\\StatikAI\\experiments\\ocr_v1_20261108_01\\ocr_models",
+      "Global.log_level": "warning",
+      "Global.use_cls": false,
+      "Global.text_score": 0.0,
+      "Det.ocr_version": "PP-OCRv6",
+      "Det.model_type": "small",
+      "Rec.ocr_version": "PP-OCRv6",
+      "Rec.model_type": "small",
+      "EngineConfig.onnxruntime.intra_op_num_threads": 2,
+      "EngineConfig.onnxruntime.inter_op_num_threads": 1,
+      "EngineConfig.onnxruntime.use_cuda": false
+    },
+    "confidence_note": "recognizer score, not a calibrated probability",
+    "models": {
+      "PP-OCRv6_det_small.onnx": "090f04abcd9d9a7498bc4ebf677e4cb9bdce1fe4197ddb7e529f1ef44e1ff94f",
+      "PP-OCRv6_rec_small.onnx": "6f327246b50388f3c176ae304bd95767ea6dc0c9ae92153ef8cbe210b3c14884"
+    }
+  },
+  "limitation": "same-renderer synthetic narrow domain, not real engineering drawings; no guarantee of all unsupported-load rejection"
+}

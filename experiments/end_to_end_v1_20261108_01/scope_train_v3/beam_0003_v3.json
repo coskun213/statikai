@@ -1,0 +1,70 @@
+{
+  "status": "passed",
+  "passed": true,
+  "config": {
+    "arrow_head_width_ratio": 1.8,
+    "unexplained_area_fraction": 0.00012,
+    "triangle_widening_ratio": 1.6,
+    "symbol_padding_width": 0.012,
+    "support_symmetry_width": 0.004,
+    "scope": "left pin, right roller, horizontal beam, two downward point loads"
+  },
+  "arrows": [
+    {
+      "downward": true,
+      "head_width_ratio": 8.133333333333333,
+      "upper_width_px": 3.0,
+      "lower_width_px": 24.4,
+      "component_bbox": [
+        331,
+        229,
+        360,
+        344
+      ],
+      "method": "head widening at bottom of independently located vertical ink component"
+    },
+    {
+      "downward": true,
+      "head_width_ratio": 8.133333333333333,
+      "upper_width_px": 3.0,
+      "lower_width_px": 24.4,
+      "component_bbox": [
+        760,
+        229,
+        789,
+        344
+      ],
+      "method": "head widening at bottom of independently located vertical ink component"
+    }
+  ],
+  "supports": [
+    {
+      "triangle": true,
+      "triangle_widening_ratio": 6.25,
+      "roller_pair": true,
+      "circle_centers_px": [
+        [
+          1057.5,
+          397.0
+        ],
+        [
+          1030.0,
+          397.0
+        ]
+      ],
+      "method": "triangle widening and two separate circular ink components",
+      "class_id": 1
+    },
+    {
+      "triangle": true,
+      "triangle_widening_ratio": 6.25,
+      "roller_pair": false,
+      "circle_centers_px": [],
+      "method": "triangle widening and two separate circular ink components",
+      "class_id": 0
+    }
+  ],
+  "issues": [],
+  "limitation": "pixel rejection checks do not guarantee recognition of every unsupported symbol",
+  "unexplained_components_xywh": []
+}

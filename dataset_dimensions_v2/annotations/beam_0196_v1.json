@@ -1,0 +1,321 @@
+{
+  "beam": {
+    "left_px": 123.15107403263713,
+    "right_px": 784.4616812177607,
+    "y_px": 287.96396654905556
+  },
+  "symbols": [
+    {
+      "instance_id": 1,
+      "role": "support_A",
+      "class_id": 0,
+      "bbox": [
+        94,
+        291,
+        149,
+        328
+      ],
+      "position_m": 0.0,
+      "anchor_px": [
+        123.15107403263713,
+        287.96396654905556
+      ]
+    },
+    {
+      "instance_id": 2,
+      "role": "support_B",
+      "class_id": 1,
+      "bbox": [
+        755,
+        291,
+        810,
+        340
+      ],
+      "position_m": 10.83,
+      "anchor_px": [
+        784.4616812177607,
+        287.96396654905556
+      ]
+    },
+    {
+      "instance_id": 3,
+      "role": "load_1",
+      "class_id": 2,
+      "bbox": [
+        304,
+        207,
+        322,
+        285
+      ],
+      "position_m": 3.111,
+      "anchor_px": [
+        313.11758363124466,
+        287.96396654905556
+      ]
+    },
+    {
+      "instance_id": 4,
+      "role": "load_2",
+      "class_id": 2,
+      "bbox": [
+        608,
+        207,
+        626,
+        285
+      ],
+      "position_m": 8.083,
+      "anchor_px": [
+        616.7220470591702,
+        287.96396654905556
+      ]
+    }
+  ],
+  "texts": [
+    {
+      "text": "10 kN",
+      "bbox": [
+        288,
+        174,
+        338,
+        188
+      ],
+      "origin_px": [
+        288,
+        174
+      ],
+      "kind": "force",
+      "association": "load_1",
+      "font_size": 20,
+      "ink_rgb": [
+        20,
+        20,
+        20
+      ],
+      "value_si": 10.0,
+      "unit": "kN"
+    },
+    {
+      "text": "4 kN",
+      "bbox": [
+        597,
+        174,
+        637,
+        188
+      ],
+      "origin_px": [
+        597,
+        174
+      ],
+      "kind": "force",
+      "association": "load_2",
+      "font_size": 20,
+      "ink_rgb": [
+        20,
+        20,
+        20
+      ],
+      "value_si": 4.0,
+      "unit": "kN"
+    },
+    {
+      "text": "A",
+      "bbox": [
+        71,
+        300,
+        86,
+        313
+      ],
+      "origin_px": [
+        71,
+        300
+      ],
+      "kind": "support_id",
+      "association": "support_A",
+      "font_size": 20,
+      "ink_rgb": [
+        20,
+        20,
+        20
+      ]
+    },
+    {
+      "text": "B",
+      "bbox": [
+        823,
+        300,
+        836,
+        313
+      ],
+      "origin_px": [
+        823,
+        300
+      ],
+      "kind": "support_id",
+      "association": "support_B",
+      "font_size": 20,
+      "ink_rgb": [
+        20,
+        20,
+        20
+      ]
+    },
+    {
+      "text": "3,111 m",
+      "bbox": [
+        185,
+        375,
+        251,
+        391
+      ],
+      "origin_px": [
+        185,
+        375
+      ],
+      "kind": "dimension",
+      "association": "dim_0",
+      "font_size": 20,
+      "ink_rgb": [
+        20,
+        20,
+        20
+      ],
+      "value_si": 3.111,
+      "unit": "m"
+    },
+    {
+      "text": "8,083 m",
+      "bbox": [
+        337,
+        431,
+        403,
+        447
+      ],
+      "origin_px": [
+        337,
+        431
+      ],
+      "kind": "dimension",
+      "association": "dim_1",
+      "font_size": 20,
+      "ink_rgb": [
+        20,
+        20,
+        20
+      ],
+      "value_si": 8.083,
+      "unit": "m"
+    },
+    {
+      "text": "10,83 m",
+      "bbox": [
+        421,
+        487,
+        487,
+        503
+      ],
+      "origin_px": [
+        421,
+        487
+      ],
+      "kind": "dimension",
+      "association": "dim_2",
+      "font_size": 20,
+      "ink_rgb": [
+        20,
+        20,
+        20
+      ],
+      "value_si": 10.83,
+      "unit": "m"
+    }
+  ],
+  "dimensions": [
+    {
+      "id": "dim_0",
+      "from_m": 0,
+      "to_m": 3.111,
+      "text_index": 4,
+      "endpoints_px": [
+        [
+          123.15107403263713,
+          402.96396654905556
+        ],
+        [
+          313.11758363124466,
+          402.96396654905556
+        ]
+      ],
+      "level": 0
+    },
+    {
+      "id": "dim_1",
+      "from_m": 0,
+      "to_m": 8.083,
+      "text_index": 5,
+      "endpoints_px": [
+        [
+          123.15107403263713,
+          458.96396654905556
+        ],
+        [
+          616.7220470591702,
+          458.96396654905556
+        ]
+      ],
+      "level": 1
+    },
+    {
+      "id": "dim_2",
+      "from_m": 0,
+      "to_m": 10.83,
+      "text_index": 6,
+      "endpoints_px": [
+        [
+          123.15107403263713,
+          514.9639665490556
+        ],
+        [
+          784.4616812177607,
+          514.9639665490556
+        ]
+      ],
+      "level": 2
+    }
+  ],
+  "render": {
+    "width": 900,
+    "height": 660,
+    "scale": 1.0,
+    "a": 123.15107403263713,
+    "b": 784.4616812177607,
+    "y": 287.96396654905556,
+    "ink": 20,
+    "stroke": 3,
+    "beam_stroke": 5,
+    "radius": 20.007666669402273,
+    "triangle_height": 23.842239605335685,
+    "hatch": 6.6784692826715535,
+    "roller_radius": 4.614225572979622,
+    "arrow_height": 80.90631722131457,
+    "head_width": 8.59914339220709,
+    "head_height": 16.020061268412118,
+    "symbol_style": 2,
+    "font_index": 1,
+    "font_size": 20,
+    "length_unit": "m",
+    "force_unit": "kN",
+    "decimal_comma": true,
+    "layout": "datum"
+  },
+  "schema": "statikai.dimensions.v2",
+  "problem_id": "196",
+  "variant": "1",
+  "split": "train",
+  "image": "images/beam_0196_v1.png",
+  "font": {
+    "name": "times.ttf",
+    "path": "C:\\Windows\\Fonts\\times.ttf",
+    "sha256": "931c5de5c70401d9324d5014c123802b4fb753000360ceb2f56c589403cd58c5"
+  },
+  "image_sha256": "466e35243fb490234921207c95fa191cad9f4628d49112ace5deea8955a0d45d"
+}

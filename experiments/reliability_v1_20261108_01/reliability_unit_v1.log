@@ -1,0 +1,48 @@
+....F.....................                                               [100%]
+================================== FAILURES ===================================
+____________ test_suspicion_stops_before_solver[missing_ocr_score] ____________
+
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x000002256BFFA030>
+kind = 'missing_ocr_score'
+
+    @pytest.mark.parametrize('kind',['symbol','missing_symbol_score','ocr','missing_ocr_score','unit','outside','scope','missing_value'])
+    def test_suspicion_stops_before_solver(monkeypatch,kind):
+        ev=evidence();x=ev['extraction']
+        if kind=='symbol':x['symbols'][0]['score']=.4
+        if kind=='missing_symbol_score':x['symbols'][0].pop('score')
+        if kind=='ocr':x['ocr_readings'][0]['confidence']=.83
+        if kind=='missing_ocr_score':x['ocr_readings'][0]['confidence']=None
+        if kind=='unit':x['ocr_readings'][0]['raw_text']='8 kg'
+        if kind=='outside':x['extracted_inputs']['x1_m']=11
+        if kind=='scope':ev['scope_check']['passed']=False
+        if kind=='missing_value':x['extracted_inputs'].pop('P1_kN')
+        monkeypatch.setattr(physics,'reactions',lambda *a:pytest.fail('No solver before reliability acceptance'))
+>       result=assess(ev,POLICY)
+               ^^^^^^^^^^^^^^^^^
+
+test_reliability.py:39: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+statikai\reliability.py:126: in assess
+    inputs,old_errors=validate_extraction(extraction,scope)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+statikai\beam_pipeline.py:67: in validate_extraction
+    else:check_quantity(q.get('source_text_ids'),'force',value)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+ids = ['text_0'], kind = 'force', value = 8.0
+
+    def check_quantity(ids,kind,value):
+        if not isinstance(ids,list) or len(ids)!=1 or ids[0] not in texts:
+            error('missing_quantity_source','A quantity must refer to one unambiguous OCR label.');return
+        t=texts[ids[0]];q=parse_quantity(t.get('raw_text',''))
+        if (not t.get('accepted') or q.get('status')!='ok' or q.get('kind')!=kind
+                or not math.isclose(q.get('value_si',float('nan')),value,rel_tol=1e-10,abs_tol=1e-9)
+>               or not t.get('bbox') or t.get('confidence',0)<.8):
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^
+E               TypeError: '<' not supported between instances of 'NoneType' and 'float'
+
+statikai\beam_pipeline.py:57: TypeError
+=========================== short test summary info ===========================
+FAILED test_reliability.py::test_suspicion_stops_before_solver[missing_ocr_score]
+1 failed, 25 passed in 2.38s

@@ -1,0 +1,55 @@
+{
+  "status": "BAŞARISIZ",
+  "hash_scope": "exact RGB uint8 48x48 inputs from Patches before float conversion; includes GT crop and resize",
+  "split_counts": {
+    "train": 980,
+    "val": 280,
+    "test": 140
+  },
+  "base_families": {
+    "train": 28,
+    "val": 8,
+    "test": 4
+  },
+  "overlaps": {
+    "train_val": {
+      "shared_unique_input_hashes": 34,
+      "later_split_samples_already_seen": 280,
+      "total_later_split_samples": 280,
+      "by_class": {
+        "0": 120,
+        "2": 40,
+        "3": 80,
+        "1": 40
+      },
+      "fraction": 1.0,
+      "conflicting_labels": 0
+    },
+    "train_test": {
+      "shared_unique_input_hashes": 30,
+      "later_split_samples_already_seen": 140,
+      "total_later_split_samples": 140,
+      "by_class": {
+        "0": 60,
+        "2": 20,
+        "3": 40,
+        "1": 20
+      },
+      "fraction": 1.0,
+      "conflicting_labels": 0
+    },
+    "val_test": {
+      "shared_unique_input_hashes": 26,
+      "later_split_samples_already_seen": 135,
+      "total_later_split_samples": 140,
+      "by_class": {
+        "0": 60,
+        "2": 20,
+        "1": 20,
+        "3": 35
+      },
+      "fraction": 0.9642857142857143,
+      "conflicting_labels": 0
+    }
+  }
+}

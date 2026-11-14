@@ -1,0 +1,110 @@
+{
+  "created_utc": "2026-11-08T17:36:03.347926+00:00",
+  "architecture": "LiteFPNCenter-v1",
+  "input_size": [
+    384,
+    256
+  ],
+  "components": [
+    "depthwise separable encoder",
+    "stride-4 top-down feature pyramid",
+    "class-specific heatmap and box heads"
+  ],
+  "pretrained_weights": false,
+  "seed": 22091108,
+  "full_epochs": 18,
+  "batch_size": 12,
+  "cpu_threads": 2,
+  "optimizer": "AdamW",
+  "learning_rate": 0.001,
+  "weight_decay": 0.0001,
+  "pilot": {
+    "train_images": 160,
+    "val_images": 40,
+    "epochs": 2,
+    "device": "cpu"
+  },
+  "training_source": "dataset_dimensions_v2 split=train; 350 original families, 1750 images plus 96 generated negative training images",
+  "validation_source": "dataset_dimensions_v2 split=val; 100 original families, 500 images",
+  "forbidden_selection_source": "all old split=test images and all new independent test predictions",
+  "fresh_test": {
+    "seed": 911082026,
+    "families": 80,
+    "first_problem_id": 10000,
+    "profiles": [
+      "clean",
+      "affine_scan",
+      "low_contrast",
+      "noisy_low_light",
+      "low_resolution",
+      "dark_background"
+    ],
+    "negative_images": 40,
+    "renderer": "independently implemented audit renderer; no dataset_v2 render import",
+    "external_real_source": false
+  },
+  "metrics": {
+    "primary_iou": 0.5,
+    "secondary_iou": 0.75,
+    "precision_recall_f1": "micro and per class",
+    "iou": [
+      "mean matched-TP IoU",
+      "mean best same-class IoU per GT with misses=0"
+    ],
+    "negative_false_alarm_rate": true,
+    "bootstrap": "1000 paired family-cluster resamples; single training seed"
+  },
+  "selection": {
+    "epoch": "max (validation F1 at score .2, validation IoU); earliest on tie",
+    "threshold_candidates": [
+      0.1,
+      0.2,
+      0.35,
+      0.5,
+      0.65
+    ],
+    "threshold_split": "val only",
+    "nms_iou": 0.3,
+    "classical_fill_cutoffs": [
+      0.55,
+      0.65,
+      0.75
+    ]
+  },
+  "comparisons": [
+    "LiteFPNCenter-v1",
+    "TinyDetector-v1 retrained on same V2 training/augmentation/schedule",
+    "unchanged OpenCV baseline",
+    "frozen original TinyDetector checkpoint"
+  ],
+  "augmentation": {
+    "train_only": true,
+    "flip_horizontal_probability": 0.5,
+    "rotation_degrees": 5,
+    "scale": [
+      0.8,
+      1.12
+    ],
+    "translation_fraction": 0.06,
+    "brightness": [
+      0.65,
+      1.15
+    ],
+    "contrast": [
+      0.55,
+      1.3
+    ],
+    "gamma": [
+      0.75,
+      1.3
+    ],
+    "blur_max_sigma": 0.9,
+    "noise_max_sigma": 0.025,
+    "invert_probability": 0.08
+  },
+  "failure_examples": "first 20 erroneous positive new-model images in predetermined row order; no results-driven test modifications",
+  "limitations": [
+    "same author synthetic evaluation, not real-world external validation",
+    "resolution/capacity differ, so no architecture-only causal claim"
+  ]
+}

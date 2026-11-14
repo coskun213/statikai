@@ -1,0 +1,62 @@
+{
+  "frozen_utc": "2026-11-08T15:01:25.047143+00:00",
+  "iou_threshold": 0.5,
+  "checkpoint_sha256": "f06b823e8c4d07b9c4816506cf800c7ac601a9b7f9f0c520585f1f64b5476a56",
+  "data_csv_sha256": "3a494b5238962cc11989bf8c4d71c5ce221915ef3ac174fe28eb83914dafc03a",
+  "selected_epoch": 17,
+  "classical": {
+    "method": "classical",
+    "fill_cutoff": 0.55,
+    "val_f1": 0.9974937343358395
+  },
+  "learned": {
+    "method": "learned",
+    "score_threshold": 0.2,
+    "val_f1": 1.0
+  },
+  "calibration": [
+    {
+      "method": "classical",
+      "fill_cutoff": 0.55,
+      "val_f1": 0.9974937343358395
+    },
+    {
+      "method": "classical",
+      "fill_cutoff": 0.65,
+      "val_f1": 0.9974937343358395
+    },
+    {
+      "method": "classical",
+      "fill_cutoff": 0.75,
+      "val_f1": 0.9974937343358395
+    },
+    {
+      "method": "learned",
+      "score_threshold": 0.1,
+      "val_f1": 0.9959539371304077
+    },
+    {
+      "method": "learned",
+      "score_threshold": 0.2,
+      "val_f1": 1.0
+    },
+    {
+      "method": "learned",
+      "score_threshold": 0.35,
+      "val_f1": 1.0
+    },
+    {
+      "method": "learned",
+      "score_threshold": 0.5,
+      "val_f1": 0.9984350547730829
+    },
+    {
+      "method": "learned",
+      "score_threshold": 0.65,
+      "val_f1": 0.9911727616645649
+    }
+  ],
+  "selection_split": "val",
+  "selection_style": "A",
+  "test_accessed_during_selection": false
+}

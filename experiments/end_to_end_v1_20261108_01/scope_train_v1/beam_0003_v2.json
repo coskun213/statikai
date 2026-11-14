@@ -1,0 +1,100 @@
+{
+  "status": "review_required",
+  "passed": false,
+  "config": {
+    "arrow_head_width_ratio": 1.8,
+    "unexplained_area_fraction": 0.00012,
+    "triangle_widening_ratio": 1.6,
+    "symbol_padding_width": 0.012,
+    "scope": "left pin, right roller, horizontal beam, two downward point loads"
+  },
+  "arrows": [
+    {
+      "downward": true,
+      "head_width_ratio": 10.666666666666666,
+      "upper_width_px": 3.0,
+      "lower_width_px": 32.0,
+      "component_bbox": [
+        769,
+        204,
+        805,
+        343
+      ],
+      "method": "head widening at bottom of independently located vertical ink component"
+    },
+    {
+      "downward": true,
+      "head_width_ratio": 10.666666666666666,
+      "upper_width_px": 3.0,
+      "lower_width_px": 32.0,
+      "component_bbox": [
+        328,
+        204,
+        364,
+        343
+      ],
+      "method": "head widening at bottom of independently located vertical ink component"
+    }
+  ],
+  "supports": [
+    {
+      "triangle": true,
+      "triangle_widening_ratio": 4.125,
+      "roller_pair": true,
+      "circle_centers_px": [
+        [
+          1048.0,
+          391.0
+        ],
+        [
+          1077.5,
+          391.0
+        ]
+      ],
+      "method": "triangle widening and two separate circular ink components",
+      "class_id": 1
+    },
+    {
+      "triangle": true,
+      "triangle_widening_ratio": 4.25,
+      "roller_pair": true,
+      "circle_centers_px": [
+        [
+          97.44444444444444,
+          394.0
+        ],
+        [
+          107.88888888888889,
+          394.0
+        ],
+        [
+          118.44444444444444,
+          394.0
+        ],
+        [
+          128.44444444444446,
+          394.0
+        ],
+        [
+          138.88888888888889,
+          394.0
+        ],
+        [
+          149.44444444444446,
+          394.0
+        ]
+      ],
+      "method": "triangle widening and two separate circular ink components",
+      "class_id": 0
+    }
+  ],
+  "issues": [
+    {
+      "code": "support_type_unverified",
+      "detail": "Roller evidence disagrees with the detected support class.",
+      "severity": "review_required"
+    }
+  ],
+  "limitation": "pixel rejection checks do not guarantee recognition of every unsupported symbol",
+  "unexplained_components_xywh": []
+}

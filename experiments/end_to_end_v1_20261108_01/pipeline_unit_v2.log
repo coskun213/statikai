@@ -1,0 +1,33 @@
+...................F....                                                 [100%]
+================================== FAILURES ===================================
+_______ test_pixel_scope_rejects_unsupported_loading_or_support[fixed] ________
+
+mutation = 'fixed'
+
+    @pytest.mark.parametrize('mutation',['upward','horizontal','fixed','moment','distributed','third_arrow'])
+    def test_pixel_scope_rejects_unsupported_loading_or_support(mutation):
+        im,x=controlled();d=ImageDraw.Draw(im)
+        first=x['forces'][0]['symbol_bbox'];cx=(first[0]+first[2])/2
+        if mutation in ('upward','horizontal'):
+            a,b,c,e=first;d.rectangle((a-8,b-8,c+8,e+3),fill='white')
+            if mutation=='upward':
+                d.line((cx,b,cx,e),fill='black',width=2);d.polygon([(cx,b),(cx-10,b+16),(cx+10,b+16)],fill='black')
+            else:
+                d.line((cx-30,220,cx+30,220),fill='black',width=2);d.polygon([(cx+30,220),(cx+15,210),(cx+15,230)],fill='black')
+        if mutation=='fixed':
+            box=x['supports'][0]['bbox'];d.rectangle((box[0]-3,270,box[2]+3,box[3]+3),fill='white')
+            d.line((100,273,100,320),fill='black',width=4)
+            for y in range(278,321,8):d.line((100,y,82,y+7),fill='black',width=2)
+        if mutation=='moment':d.arc((470,215,530,265),20,330,fill='black',width=3)
+        if mutation=='distributed':d.line((300,140,750,140),fill='black',width=3)
+        if mutation=='third_arrow':
+            d.line((490,180,490,265),fill='black',width=2);d.polygon([(490,265),(480,249),(500,249)],fill='black')
+>       s=inspect_scope(im,x);assert not s['passed'],s
+                              ^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: {'status': 'passed', 'passed': True, 'config': {'arrow_head_width_ratio': 1.8, 'unexplained_area_fraction': 0.00012, '...px': 17.4, ...}, {'downward': True, 'head_width_ratio': 8.7, 'upper_width_px': 2.0, 'lower_width_px': 17.4, ...}], ...}
+E       assert not True
+
+test_beam_pipeline.py:114: AssertionError
+=========================== short test summary info ===========================
+FAILED test_beam_pipeline.py::test_pixel_scope_rejects_unsupported_loading_or_support[fixed]
+1 failed, 23 passed in 1.82s

@@ -1,0 +1,40 @@
+{
+  "schema_version": "statikai.end_to_end.v1",
+  "status": "review_required",
+  "review_required": true,
+  "image_path": "C:\\Users\\HP\\Documents\\Codex\\2026-11-08\\t\\outputs\\StatikAI\\experiments\\end_to_end_v1_20261108_01\\benchmark\\invalid\\corrupt.png",
+  "extraction": null,
+  "scope_check": null,
+  "validated_inputs": null,
+  "issues": [
+    {
+      "code": "image_or_inference_failure",
+      "detail": "cannot identify image file 'C:\\\\Users\\\\HP\\\\Documents\\\\Codex\\\\2026-11-08\\\\t\\\\outputs\\\\StatikAI\\\\experiments\\\\end_to_end_v1_20261108_01\\\\benchmark\\\\invalid\\\\corrupt.png'",
+      "severity": "review_required"
+    }
+  ],
+  "stages": {
+    "image": "failed",
+    "detection": "not_completed",
+    "ocr": "not_completed",
+    "geometry": "not_completed",
+    "validation": "not_run",
+    "statics": "not_run",
+    "equilibrium": "not_run"
+  },
+  "static_solution": {
+    "status": "not_run",
+    "RA_kN": null,
+    "RB_kN": null
+  },
+  "equilibrium": {
+    "status": "not_run",
+    "passed": null
+  },
+  "interpretation_truth_status": "not_independently_verified",
+  "interpretation_warning": "Denge yalnız okunan girdiler için aritmetik tutarlılığı sınar. Yanlış okunan kuvvet ve ölçüler de denge sağlayabilir; görüntü yorumu bağımsız doğrulanmış değildir.",
+  "completed_stages_before_error": [],
+  "elapsed_seconds": 0.07732139999279752,
+  "stage_timings_seconds": {},
+  "physics_source_sha256": "5dd8a9e9a512ebd8a3ee459b848cfd59a1d01dc5bc51cd4c53322ae5b90142be"
+}

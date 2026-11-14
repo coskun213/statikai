@@ -1,0 +1,108 @@
+{
+  "image_only_directory_has_no_annotations": true,
+  "runs": [
+    {
+      "command": [
+        "C:\\Users\\HP\\Documents\\Codex\\2026-11-08\\t\\work\\statikai_audit\\StatikAI_Codex_Hazir\\.venv\\Scripts\\python.exe",
+        "detect_image.py",
+        "--image",
+        "C:\\Users\\HP\\Documents\\Codex\\2026-11-08\\t\\outputs\\StatikAI\\audit_results\\son_durum_20261108_01\\image_only\\A.png",
+        "--method",
+        "classical",
+        "--out",
+        "C:\\Users\\HP\\Documents\\Codex\\2026-11-08\\t\\outputs\\StatikAI\\audit_results\\son_durum_20261108_01\\cli_A_classical_output.json"
+      ],
+      "cwd": "C:\\Users\\HP\\Documents\\Codex\\2026-11-08\\t\\outputs\\StatikAI",
+      "exit_code": 0,
+      "seconds": 0.2671705999528058,
+      "status": "BAŞARILI",
+      "symbols": 4,
+      "scope": "symbol_detection_only",
+      "ocr": "not_implemented",
+      "RA": null,
+      "RB": null
+    },
+    {
+      "command": [
+        "C:\\Users\\HP\\Documents\\Codex\\2026-11-08\\t\\work\\statikai_audit\\StatikAI_Codex_Hazir\\.venv\\Scripts\\python.exe",
+        "detect_image.py",
+        "--image",
+        "C:\\Users\\HP\\Documents\\Codex\\2026-11-08\\t\\outputs\\StatikAI\\audit_results\\son_durum_20261108_01\\image_only\\A.png",
+        "--method",
+        "learned",
+        "--out",
+        "C:\\Users\\HP\\Documents\\Codex\\2026-11-08\\t\\outputs\\StatikAI\\audit_results\\son_durum_20261108_01\\cli_A_learned_output.json"
+      ],
+      "cwd": "C:\\Users\\HP\\Documents\\Codex\\2026-11-08\\t\\outputs\\StatikAI",
+      "exit_code": 0,
+      "seconds": 2.5243228999897838,
+      "status": "BAŞARILI",
+      "symbols": 4,
+      "scope": "symbol_detection_only",
+      "ocr": "not_implemented",
+      "RA": null,
+      "RB": null
+    },
+    {
+      "command": [
+        "C:\\Users\\HP\\Documents\\Codex\\2026-11-08\\t\\work\\statikai_audit\\StatikAI_Codex_Hazir\\.venv\\Scripts\\python.exe",
+        "detect_image.py",
+        "--image",
+        "C:\\Users\\HP\\Documents\\Codex\\2026-11-08\\t\\outputs\\StatikAI\\audit_results\\son_durum_20261108_01\\image_only\\B.png",
+        "--method",
+        "classical",
+        "--out",
+        "C:\\Users\\HP\\Documents\\Codex\\2026-11-08\\t\\outputs\\StatikAI\\audit_results\\son_durum_20261108_01\\cli_B_classical_output.json"
+      ],
+      "cwd": "C:\\Users\\HP\\Documents\\Codex\\2026-11-08\\t\\outputs\\StatikAI",
+      "exit_code": 0,
+      "seconds": 0.2945253000361845,
+      "status": "BAŞARILI",
+      "symbols": 4,
+      "scope": "symbol_detection_only",
+      "ocr": "not_implemented",
+      "RA": null,
+      "RB": null
+    },
+    {
+      "command": [
+        "C:\\Users\\HP\\Documents\\Codex\\2026-11-08\\t\\work\\statikai_audit\\StatikAI_Codex_Hazir\\.venv\\Scripts\\python.exe",
+        "detect_image.py",
+        "--image",
+        "C:\\Users\\HP\\Documents\\Codex\\2026-11-08\\t\\outputs\\StatikAI\\audit_results\\son_durum_20261108_01\\image_only\\B.png",
+        "--method",
+        "learned",
+        "--out",
+        "C:\\Users\\HP\\Documents\\Codex\\2026-11-08\\t\\outputs\\StatikAI\\audit_results\\son_durum_20261108_01\\cli_B_learned_output.json"
+      ],
+      "cwd": "C:\\Users\\HP\\Documents\\Codex\\2026-11-08\\t\\outputs\\StatikAI",
+      "exit_code": 0,
+      "seconds": 2.5421376999584027,
+      "status": "BAŞARILI",
+      "symbols": 3,
+      "scope": "symbol_detection_only",
+      "ocr": "not_implemented",
+      "RA": null,
+      "RB": null
+    }
+  ],
+  "guard": {
+    "command": [
+      "C:\\Users\\HP\\Documents\\Codex\\2026-11-08\\t\\work\\statikai_audit\\StatikAI_Codex_Hazir\\.venv\\Scripts\\python.exe",
+      "detect_image.py",
+      "--image",
+      "C:\\Users\\HP\\Documents\\Codex\\2026-11-08\\t\\outputs\\StatikAI\\audit_results\\son_durum_20261108_01\\image_only\\A.png",
+      "--method",
+      "learned",
+      "--protocol",
+      "C:\\Users\\HP\\Documents\\Codex\\2026-11-08\\t\\outputs\\StatikAI\\audit_results\\son_durum_20261108_01\\mismatched_protocol.json",
+      "--out",
+      "C:\\Users\\HP\\Documents\\Codex\\2026-11-08\\t\\outputs\\StatikAI\\audit_results\\son_durum_20261108_01\\should_not_exist.json"
+    ],
+    "cwd": "C:\\Users\\HP\\Documents\\Codex\\2026-11-08\\t\\outputs\\StatikAI",
+    "exit_code": 1,
+    "seconds": 2.4611652999883518,
+    "status": "BAŞARILI",
+    "expectation": "mismatched checkpoint/protocol must be rejected"
+  }
+}

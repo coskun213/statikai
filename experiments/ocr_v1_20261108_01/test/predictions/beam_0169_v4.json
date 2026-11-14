@@ -1,0 +1,951 @@
+{
+  "schema_version": "statikai.ocr.v1",
+  "coordinate_system": "original image pixels, xyxy",
+  "config": {
+    "minimum_ocr_confidence": 0.8,
+    "endpoint_tolerance_width": 0.02,
+    "dimension_consistency_m": 0.001,
+    "force_label_dx_width": 0.045,
+    "supported_domain": "horizontal pin/roller beam, two downward point loads"
+  },
+  "ocr_readings": [
+    {
+      "raw_text": "10 kN",
+      "confidence": 0.97313,
+      "quad": [
+        [
+          460.0,
+          192.0
+        ],
+        [
+          537.0,
+          192.0
+        ],
+        [
+          537.0,
+          223.0
+        ],
+        [
+          460.0,
+          223.0
+        ]
+      ],
+      "bbox": [
+        460.0,
+        192.0,
+        537.0,
+        223.0
+      ],
+      "id": "text_0",
+      "quantity": {
+        "status": "ok",
+        "kind": "force",
+        "raw_value": "10",
+        "unit": "kN",
+        "value_si": 10.0,
+        "value_si_decimal": "10",
+        "si_unit": "kN",
+        "decimal_policy": "one dot or comma is decimal; no thousands grouping"
+      },
+      "accepted": true,
+      "label_region": "force"
+    },
+    {
+      "raw_text": "6kN",
+      "confidence": 0.99938,
+      "quad": [
+        [
+          812.0,
+          192.0
+        ],
+        [
+          876.0,
+          192.0
+        ],
+        [
+          876.0,
+          223.0
+        ],
+        [
+          812.0,
+          223.0
+        ]
+      ],
+      "bbox": [
+        812.0,
+        192.0,
+        876.0,
+        223.0
+      ],
+      "id": "text_1",
+      "quantity": {
+        "status": "ok",
+        "kind": "force",
+        "raw_value": "6",
+        "unit": "kN",
+        "value_si": 6.0,
+        "value_si_decimal": "6",
+        "si_unit": "kN",
+        "decimal_policy": "one dot or comma is decimal; no thousands grouping"
+      },
+      "accepted": true,
+      "label_region": "force"
+    },
+    {
+      "raw_text": "A",
+      "confidence": 0.99675,
+      "quad": [
+        [
+          77.0,
+          392.0
+        ],
+        [
+          104.0,
+          392.0
+        ],
+        [
+          104.0,
+          418.0
+        ],
+        [
+          77.0,
+          418.0
+        ]
+      ],
+      "bbox": [
+        77.0,
+        392.0,
+        104.0,
+        418.0
+      ],
+      "id": "text_2",
+      "quantity": {
+        "status": "unparsed",
+        "value_si": null
+      },
+      "accepted": false,
+      "label_region": "other_ink"
+    },
+    {
+      "raw_text": "B",
+      "confidence": 0.99981,
+      "quad": [
+        [
+          1083.0,
+          391.0
+        ],
+        [
+          1107.0,
+          391.0
+        ],
+        [
+          1107.0,
+          417.0
+        ],
+        [
+          1083.0,
+          417.0
+        ]
+      ],
+      "bbox": [
+        1083.0,
+        391.0,
+        1107.0,
+        417.0
+      ],
+      "id": "text_3",
+      "quantity": {
+        "status": "unparsed",
+        "value_si": null
+      },
+      "accepted": false,
+      "label_region": "other_ink"
+    },
+    {
+      "raw_text": "177777",
+      "confidence": 0.81375,
+      "quad": [
+        [
+          119.0,
+          420.0
+        ],
+        [
+          174.0,
+          420.0
+        ],
+        [
+          174.0,
+          434.0
+        ],
+        [
+          119.0,
+          434.0
+        ]
+      ],
+      "bbox": [
+        119.0,
+        420.0,
+        174.0,
+        434.0
+      ],
+      "id": "text_4",
+      "quantity": {
+        "status": "missing_unit",
+        "value_si": null
+      },
+      "accepted": false,
+      "label_region": "other_ink"
+    },
+    {
+      "raw_text": "177777",
+      "confidence": 0.78241,
+      "quad": [
+        [
+          1004.0,
+          431.0
+        ],
+        [
+          1060.0,
+          431.0
+        ],
+        [
+          1060.0,
+          449.0
+        ],
+        [
+          1004.0,
+          449.0
+        ]
+      ],
+      "bbox": [
+        1004.0,
+        431.0,
+        1060.0,
+        449.0
+      ],
+      "id": "text_5",
+      "quantity": {
+        "status": "missing_unit",
+        "value_si": null
+      },
+      "accepted": false,
+      "label_region": "other_ink"
+    },
+    {
+      "raw_text": "4,245 m",
+      "confidence": 0.98646,
+      "quad": [
+        [
+          273.0,
+          487.0
+        ],
+        [
+          376.0,
+          487.0
+        ],
+        [
+          376.0,
+          521.0
+        ],
+        [
+          273.0,
+          521.0
+        ]
+      ],
+      "bbox": [
+        273.0,
+        487.0,
+        376.0,
+        521.0
+      ],
+      "id": "text_6",
+      "quantity": {
+        "status": "ok",
+        "kind": "length",
+        "raw_value": "4,245",
+        "unit": "m",
+        "value_si": 4.245,
+        "value_si_decimal": "4.245",
+        "si_unit": "m",
+        "decimal_policy": "one dot or comma is decimal; no thousands grouping"
+      },
+      "accepted": true,
+      "label_region": "dimension"
+    },
+    {
+      "raw_text": "4,227 m",
+      "confidence": 0.99692,
+      "quad": [
+        [
+          620.0,
+          487.0
+        ],
+        [
+          722.0,
+          487.0
+        ],
+        [
+          722.0,
+          521.0
+        ],
+        [
+          620.0,
+          521.0
+        ]
+      ],
+      "bbox": [
+        620.0,
+        487.0,
+        722.0,
+        521.0
+      ],
+      "id": "text_7",
+      "quantity": {
+        "status": "ok",
+        "kind": "length",
+        "raw_value": "4,227",
+        "unit": "m",
+        "value_si": 4.227,
+        "value_si_decimal": "4.227",
+        "si_unit": "m",
+        "decimal_policy": "one dot or comma is decimal; no thousands grouping"
+      },
+      "accepted": true,
+      "label_region": "dimension"
+    },
+    {
+      "raw_text": "2,338 m",
+      "confidence": 0.9875,
+      "quad": [
+        [
+          889.0,
+          487.0
+        ],
+        [
+          990.0,
+          489.0
+        ],
+        [
+          989.0,
+          521.0
+        ],
+        [
+          888.0,
+          518.0
+        ]
+      ],
+      "bbox": [
+        888.0,
+        487.0,
+        990.0,
+        521.0
+      ],
+      "id": "text_8",
+      "quantity": {
+        "status": "ok",
+        "kind": "length",
+        "raw_value": "2,338",
+        "unit": "m",
+        "value_si": 2.338,
+        "value_si_decimal": "2.338",
+        "si_unit": "m",
+        "decimal_policy": "one dot or comma is decimal; no thousands grouping"
+      },
+      "accepted": true,
+      "label_region": "dimension"
+    },
+    {
+      "raw_text": "1",
+      "confidence": 0.44538,
+      "quad": [
+        [
+          152.0,
+          524.0
+        ],
+        [
+          165.0,
+          524.0
+        ],
+        [
+          165.0,
+          537.0
+        ],
+        [
+          152.0,
+          537.0
+        ]
+      ],
+      "bbox": [
+        152.0,
+        524.0,
+        165.0,
+        537.0
+      ],
+      "id": "text_9",
+      "quantity": {
+        "status": "missing_unit",
+        "value_si": null
+      },
+      "accepted": false,
+      "label_region": "other_ink"
+    },
+    {
+      "raw_text": "▶",
+      "confidence": 0.16623,
+      "quad": [
+        [
+          1021.0,
+          525.0
+        ],
+        [
+          1034.0,
+          525.0
+        ],
+        [
+          1034.0,
+          538.0
+        ],
+        [
+          1021.0,
+          538.0
+        ]
+      ],
+      "bbox": [
+        1021.0,
+        525.0,
+        1034.0,
+        538.0
+      ],
+      "id": "text_10",
+      "quantity": {
+        "status": "unparsed",
+        "value_si": null
+      },
+      "accepted": false,
+      "label_region": "other_ink"
+    },
+    {
+      "raw_text": "10,81 m",
+      "confidence": 0.99961,
+      "quad": [
+        [
+          544.0,
+          637.0
+        ],
+        [
+          645.0,
+          637.0
+        ],
+        [
+          645.0,
+          671.0
+        ],
+        [
+          544.0,
+          671.0
+        ]
+      ],
+      "bbox": [
+        544.0,
+        637.0,
+        645.0,
+        671.0
+      ],
+      "id": "text_11",
+      "quantity": {
+        "status": "ok",
+        "kind": "length",
+        "raw_value": "10,81",
+        "unit": "m",
+        "value_si": 10.81,
+        "value_si_decimal": "10.81",
+        "si_unit": "m",
+        "decimal_policy": "one dot or comma is decimal; no thousands grouping"
+      },
+      "accepted": true,
+      "label_region": "dimension"
+    }
+  ],
+  "geometry": {
+    "beam": {
+      "left_px": 151,
+      "right_px": 1036,
+      "y_px": 378.0,
+      "method": "topmost long horizontal ink component"
+    },
+    "horizontal": [
+      {
+        "x0": 151,
+        "x1": 1036,
+        "y": 531.0,
+        "thickness": 1
+      },
+      {
+        "x0": 151,
+        "x1": 1036,
+        "y": 681.0,
+        "thickness": 1
+      }
+    ],
+    "vertical": [
+      {
+        "x": 470.5,
+        "y0": 199,
+        "y1": 216
+      },
+      {
+        "x": 501.5,
+        "y0": 198,
+        "y1": 216
+      },
+      {
+        "x": 516.0,
+        "y0": 199,
+        "y1": 216
+      },
+      {
+        "x": 528.5,
+        "y0": 199,
+        "y1": 216
+      },
+      {
+        "x": 840.5,
+        "y0": 198,
+        "y1": 216
+      },
+      {
+        "x": 855.0,
+        "y0": 199,
+        "y1": 216
+      },
+      {
+        "x": 867.5,
+        "y0": 199,
+        "y1": 216
+      },
+      {
+        "x": 481.0,
+        "y0": 201,
+        "y1": 215
+      },
+      {
+        "x": 488.0,
+        "y0": 201,
+        "y1": 214
+      },
+      {
+        "x": 820.0,
+        "y0": 203,
+        "y1": 215
+      },
+      {
+        "x": 498.5,
+        "y0": 242,
+        "y1": 380
+      },
+      {
+        "x": 844.5,
+        "y0": 242,
+        "y1": 380
+      },
+      {
+        "x": 1091.0,
+        "y0": 395,
+        "y1": 412
+      },
+      {
+        "x": 165.0,
+        "y0": 405,
+        "y1": 417
+      },
+      {
+        "x": 150.0,
+        "y0": 471,
+        "y1": 691
+      },
+      {
+        "x": 498.0,
+        "y0": 471,
+        "y1": 542
+      },
+      {
+        "x": 844.0,
+        "y0": 471,
+        "y1": 542
+      },
+      {
+        "x": 1035.0,
+        "y0": 471,
+        "y1": 691
+      },
+      {
+        "x": 287.5,
+        "y0": 494,
+        "y1": 511
+      },
+      {
+        "x": 322.5,
+        "y0": 494,
+        "y1": 511
+      },
+      {
+        "x": 634.5,
+        "y0": 494,
+        "y1": 511
+      },
+      {
+        "x": 554.5,
+        "y0": 644,
+        "y1": 661
+      },
+      {
+        "x": 603.5,
+        "y0": 644,
+        "y1": 661
+      },
+      {
+        "x": 565.0,
+        "y0": 646,
+        "y1": 660
+      },
+      {
+        "x": 572.0,
+        "y0": 646,
+        "y1": 659
+      }
+    ],
+    "nodes_px": {
+      "support_A": 151,
+      "support_B": 1036,
+      "load_1": 498.5,
+      "load_2": 844.5
+    },
+    "dimensions": [
+      {
+        "id": "dimension_0",
+        "nodes": [
+          "support_A",
+          "load_1"
+        ],
+        "value_m": 4.245,
+        "text_source_ids": [
+          "text_6"
+        ],
+        "source_bbox": [
+          273.0,
+          487.0,
+          376.0,
+          521.0
+        ],
+        "confidence": 0.98646,
+        "endpoints_px": [
+          [
+            150.0,
+            531.0
+          ],
+          [
+            498.0,
+            531.0
+          ]
+        ]
+      },
+      {
+        "id": "dimension_1",
+        "nodes": [
+          "load_1",
+          "load_2"
+        ],
+        "value_m": 4.227,
+        "text_source_ids": [
+          "text_7"
+        ],
+        "source_bbox": [
+          620.0,
+          487.0,
+          722.0,
+          521.0
+        ],
+        "confidence": 0.99692,
+        "endpoints_px": [
+          [
+            498.0,
+            531.0
+          ],
+          [
+            844.0,
+            531.0
+          ]
+        ]
+      },
+      {
+        "id": "dimension_2",
+        "nodes": [
+          "load_2",
+          "support_B"
+        ],
+        "value_m": 2.338,
+        "text_source_ids": [
+          "text_8"
+        ],
+        "source_bbox": [
+          888.0,
+          487.0,
+          990.0,
+          521.0
+        ],
+        "confidence": 0.9875,
+        "endpoints_px": [
+          [
+            844.0,
+            531.0
+          ],
+          [
+            1035.0,
+            531.0
+          ]
+        ]
+      },
+      {
+        "id": "dimension_3",
+        "nodes": [
+          "support_A",
+          "support_B"
+        ],
+        "value_m": 10.81,
+        "text_source_ids": [
+          "text_11"
+        ],
+        "source_bbox": [
+          544.0,
+          637.0,
+          645.0,
+          671.0
+        ],
+        "confidence": 0.99961,
+        "endpoints_px": [
+          [
+            150.0,
+            681.0
+          ],
+          [
+            1035.0,
+            681.0
+          ]
+        ]
+      }
+    ]
+  },
+  "symbols": [
+    {
+      "class_id": 0,
+      "score": 0.9250512719154358,
+      "bbox": [
+        116.97421632707119,
+        385.85233068466187,
+        177.73199044167995,
+        431.4002809524536
+      ]
+    },
+    {
+      "class_id": 1,
+      "score": 0.8965770602226257,
+      "bbox": [
+        1009.7661442123353,
+        383.02319622039795,
+        1061.1841804347932,
+        439.39636039733887
+      ]
+    },
+    {
+      "class_id": 2,
+      "score": 0.7889474034309387,
+      "bbox": [
+        828.5184477455914,
+        247.33143505454063,
+        861.9393755681813,
+        374.2587097585201
+      ]
+    },
+    {
+      "class_id": 2,
+      "score": 0.7141051888465881,
+      "bbox": [
+        486.38479337096214,
+        232.56085216999054,
+        518.5955822467804,
+        377.07722103595734
+      ]
+    }
+  ],
+  "forces": [
+    {
+      "id": "load_1",
+      "symbol_bbox": [
+        486.38479337096214,
+        232.56085216999054,
+        518.5955822467804,
+        377.07722103595734
+      ],
+      "anchor_px": [
+        498.5,
+        378.0
+      ],
+      "magnitude_kN": {
+        "value": 10.0,
+        "source_text_ids": [
+          "text_0"
+        ],
+        "bbox": [
+          460.0,
+          192.0,
+          537.0,
+          223.0
+        ],
+        "confidence": 0.97313
+      },
+      "position_m": {
+        "value": 4.245,
+        "dimension_ids": [
+          "dimension_0"
+        ],
+        "source_text_ids": [
+          "text_6"
+        ],
+        "confidence": 0.98646,
+        "method": "sum of OCR dimensions; pixel coordinates only associate endpoints"
+      }
+    },
+    {
+      "id": "load_2",
+      "symbol_bbox": [
+        828.5184477455914,
+        247.33143505454063,
+        861.9393755681813,
+        374.2587097585201
+      ],
+      "anchor_px": [
+        844.5,
+        378.0
+      ],
+      "magnitude_kN": {
+        "value": 6.0,
+        "source_text_ids": [
+          "text_1"
+        ],
+        "bbox": [
+          812.0,
+          192.0,
+          876.0,
+          223.0
+        ],
+        "confidence": 0.99938
+      },
+      "position_m": {
+        "value": 8.472,
+        "dimension_ids": [
+          "dimension_0",
+          "dimension_1"
+        ],
+        "source_text_ids": [
+          "text_6",
+          "text_7"
+        ],
+        "confidence": 0.98646,
+        "method": "sum of OCR dimensions; pixel coordinates only associate endpoints"
+      }
+    }
+  ],
+  "supports": [
+    {
+      "id": "support_A",
+      "class_id": 0,
+      "bbox": [
+        116.97421632707119,
+        385.85233068466187,
+        177.73199044167995,
+        431.4002809524536
+      ],
+      "anchor_px": [
+        151,
+        378.0
+      ]
+    },
+    {
+      "id": "support_B",
+      "class_id": 1,
+      "bbox": [
+        1009.7661442123353,
+        383.02319622039795,
+        1061.1841804347932,
+        439.39636039733887
+      ],
+      "anchor_px": [
+        1036,
+        378.0
+      ]
+    }
+  ],
+  "length_m": {
+    "value": 10.81,
+    "dimension_ids": [
+      "dimension_3"
+    ],
+    "source_text_ids": [
+      "text_11"
+    ],
+    "confidence": 0.99961,
+    "method": "dimension graph from left support origin"
+  },
+  "extracted_inputs": {
+    "L_m": 10.81,
+    "P1_kN": 10.0,
+    "x1_m": 4.245,
+    "P2_kN": 6.0,
+    "x2_m": 8.472
+  },
+  "issues": [],
+  "review_required": false,
+  "static_solution": {
+    "status": "not_run",
+    "RA_kN": null,
+    "RB_kN": null
+  },
+  "image": {
+    "path": "C:\\Users\\HP\\Documents\\Codex\\2026-11-08\\t\\outputs\\StatikAI\\dataset_dimensions_v2\\images\\beam_0169_v4.png",
+    "width": 1200,
+    "height": 880,
+    "sha256": "1b08cf77e8b39ecb9dac99fe3daf8125871f6e173933e08d259b868783654014"
+  },
+  "detector": {
+    "model": "tiny",
+    "architecture": "TinyDetector-v1",
+    "checkpoint_sha256": "cd5224a9c9f3a08f490e673a0a272b7e816b5cadad964f5a526c8dbc6738babc",
+    "threshold": 0.35,
+    "retrained_on": "V2 train only; V2 val threshold"
+  },
+  "ocr_engine": {
+    "backend": "RapidOCR / ONNX Runtime CPU",
+    "pretrained": true,
+    "rapidocr_version": "3.10.0",
+    "onnxruntime_version": "1.31.1",
+    "parameters": {
+      "Global.model_root_dir": "C:\\Users\\HP\\Documents\\Codex\\2026-11-08\\t\\outputs\\StatikAI\\experiments\\ocr_v1_20261108_01\\ocr_models",
+      "Global.log_level": "warning",
+      "Global.use_cls": false,
+      "Global.text_score": 0.0,
+      "Det.ocr_version": "PP-OCRv6",
+      "Det.model_type": "small",
+      "Rec.ocr_version": "PP-OCRv6",
+      "Rec.model_type": "small",
+      "EngineConfig.onnxruntime.intra_op_num_threads": 2,
+      "EngineConfig.onnxruntime.inter_op_num_threads": 1,
+      "EngineConfig.onnxruntime.use_cuda": false
+    },
+    "confidence_note": "recognizer score, not a calibrated probability",
+    "models": {
+      "PP-OCRv6_det_small.onnx": "090f04abcd9d9a7498bc4ebf677e4cb9bdce1fe4197ddb7e529f1ef44e1ff94f",
+      "PP-OCRv6_rec_small.onnx": "6f327246b50388f3c176ae304bd95767ea6dc0c9ae92153ef8cbe210b3c14884"
+    }
+  },
+  "elapsed_seconds": 0.5971733000478707
+}

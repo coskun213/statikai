@@ -1,0 +1,90 @@
+{
+  "passed": true,
+  "images": 2500,
+  "problems": 500,
+  "boxes": 10000,
+  "split_images": {
+    "train": 1750,
+    "val": 500,
+    "test": 250
+  },
+  "split_problems": {
+    "train": 350,
+    "val": 100,
+    "test": 50
+  },
+  "styles": {
+    "D2": 2500
+  },
+  "class_counts": {
+    "0": 2500,
+    "1": 2500,
+    "2": 5000
+  },
+  "unique_physical_configurations": 1000,
+  "cross_split_physical_leaks": 0,
+  "cross_split_image_hash_leaks": 0,
+  "physical_configurations_shared_across_families": 0,
+  "max_force_residual_kN": 0.0,
+  "max_moment_residual_kNm": 7.67016672398313e-10,
+  "min_annotation_ink_fraction": 0.03581267217630854,
+  "errors": [],
+  "limitations": [
+    "Ink coverage is a sanity check, not proof of semantic annotation correctness",
+    "Exact duplication audit does not establish real-world generalization"
+  ],
+  "dimensions_v2": {
+    "passed": true,
+    "errors": [],
+    "warnings": [],
+    "source_external_csv_checked": true,
+    "dimension_annotations": 8500,
+    "text_annotations": 18500,
+    "text_raster_checks": 18500,
+    "max_independent_reaction_error_kN": 5e-11,
+    "cross_split_preprocessed_image_hash_leaks": 0,
+    "cross_split_symbol_crop_hashes": 0,
+    "symbol_crop_leak_examples": [],
+    "fonts": {
+      "cour.ttf": 639,
+      "times.ttf": 641,
+      "arial.ttf": 607,
+      "calibri.ttf": 613
+    },
+    "resolutions": {
+      "900x660": 840,
+      "1500x1100": 835,
+      "1200x880": 825
+    },
+    "dimension_layouts": {
+      "chain_total": 1000,
+      "datum": 500,
+      "chain_only": 500,
+      "mixed": 500
+    },
+    "units": {
+      "mm": 862,
+      "N": 1219,
+      "cm": 793,
+      "kN": 1281,
+      "m": 845
+    },
+    "symbol_styles": {
+      "2": 567,
+      "1": 628,
+      "0": 631,
+      "3": 674
+    },
+    "stroke_widths": {
+      "1": 829,
+      "2": 870,
+      "3": 801
+    },
+    "limitations": [
+      "Synthetic drawing conventions, not external real-world validation",
+      "Text raster verification uses available recorded fonts, not an OCR experiment",
+      "Exact hash checks do not rule out perceptual/template-level similarity",
+      "Source families are reused; this is not a new independent physical benchmark"
+    ]
+  }
+}

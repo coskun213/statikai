@@ -1,0 +1,19 @@
+__pycache__/
+.pytest_cache/
+.venv/
+*.pyc
+.DS_Store
+
+# Local working files
+work/
+
+# Experiment diagnostic images (~118 MB, reproducible). Weights, OCR models,
+# protocols and metrics in experiments/ stay in the repository.
+experiments/**/*.png
+
+# Machine-specific Python path used by the Windows launcher
+.statikai-python.txt
+
+# Local backups and stray audit artefacts
+*.bak_*
+Users*pytest.xml

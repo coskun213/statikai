@@ -1,0 +1,94 @@
+...................F...F                                                 [100%]
+================================== FAILURES ===================================
+_______ test_pixel_scope_rejects_unsupported_loading_or_support[fixed] ________
+
+mutation = 'fixed'
+
+    @pytest.mark.parametrize('mutation',['upward','horizontal','fixed','moment','distributed','third_arrow'])
+    def test_pixel_scope_rejects_unsupported_loading_or_support(mutation):
+        im,x=controlled();d=ImageDraw.Draw(im)
+        first=x['forces'][0]['symbol_bbox'];cx=(first[0]+first[2])/2
+        if mutation in ('upward','horizontal'):
+            a,b,c,e=first;d.rectangle((a-8,b-8,c+8,e+3),fill='white')
+            if mutation=='upward':
+                d.line((cx,b,cx,e),fill='black',width=2);d.polygon([(cx,b),(cx-10,b+16),(cx+10,b+16)],fill='black')
+            else:
+                d.line((cx-30,220,cx+30,220),fill='black',width=2);d.polygon([(cx+30,220),(cx+15,210),(cx+15,230)],fill='black')
+        if mutation=='fixed':
+            box=x['supports'][0]['bbox'];d.rectangle((box[0]-3,270,box[2]+3,box[3]+3),fill='white')
+            d.line((100,273,100,320),fill='black',width=4)
+            for y in range(278,321,8):d.line((100,y,82,y+7),fill='black',width=2)
+        if mutation=='moment':d.arc((470,215,530,265),20,330,fill='black',width=3)
+        if mutation=='distributed':d.line((300,140,750,140),fill='black',width=3)
+        if mutation=='third_arrow':
+            d.line((490,180,490,265),fill='black',width=2);d.polygon([(490,265),(480,249),(500,249)],fill='black')
+>       s=inspect_scope(im,x);assert not s['passed'],s
+                              ^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: {'status': 'passed', 'passed': True, 'config': {'arrow_head_width_ratio': 1.8, 'unexplained_area_fraction': 0.00012, '...px': 17.4, ...}, {'downward': True, 'head_width_ratio': 8.7, 'upper_width_px': 2.0, 'lower_width_px': 17.4, ...}], ...}
+E       assert not True
+
+test_beam_pipeline.py:114: AssertionError
+______________ test_image_only_orchestration_and_unreadable_file ______________
+
+tmp_path = WindowsPath('C:/Users/HP/Documents/Codex/2026-11-08/t/outputs/StatikAI/work/pytest/session-j2kryqzg/test_image_only_orchestration_0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x0000028E7230BD80>
+
+    def test_image_only_orchestration_and_unreadable_file(tmp_path,monkeypatch):
+        im,x=controlled();path=tmp_path/'image.png';im.save(path)
+        class Detector:
+            metadata={'test':'oracle boxes for stage isolation only'}
+            def read(self,image):assert image.size==im.size;return deepcopy(x['symbols'])
+        class OCR:
+            def read(self,image):return deepcopy(x['ocr_readings'])
+            def metadata(self):return {'test':'oracle text for stage isolation only'}
+        # Forbid sidecar reads. Model initialization is outside the guarded call.
+        monkeypatch.setattr(Path,'read_text',lambda *a,**k:pytest.fail('No ground truth/sidecars in inference'))
+>       r=analyze_image(path,Detector(),OCR());assert r['status']=='computed'
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test_beam_pipeline.py:127: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+statikai\beam_pipeline.py:132: in analyze_image
+    from read_beam_diagram import extract
+read_beam_diagram.py:10: in <module>
+    from statikai.symbol_reader import SymbolReader
+statikai\symbol_reader.py:5: in <module>
+    import torch
+..\..\work\statikai_audit\StatikAI_Codex_Hazir\.venv\Lib\site-packages\torch\__init__.py:2721: in <module>
+    from torch import (  # usort: skip
+..\..\work\statikai_audit\StatikAI_Codex_Hazir\.venv\Lib\site-packages\torch\hub.py:64: in <module>
+    from tqdm import tqdm  # If tqdm is installed use it, otherwise use the fake wrapper
+    ^^^^^^^^^^^^^^^^^^^^^
+..\..\work\statikai_audit\StatikAI_Codex_Hazir\.venv\Lib\site-packages\tqdm\__init__.py:3: in <module>
+    from .cli import main  # TODO: remove in v5.0.0
+    ^^^^^^^^^^^^^^^^^^^^^
+..\..\work\statikai_audit\StatikAI_Codex_Hazir\.venv\Lib\site-packages\tqdm\cli.py:11: in <module>
+    from .version import __version__
+..\..\work\statikai_audit\StatikAI_Codex_Hazir\.venv\Lib\site-packages\tqdm\version.py:5: in <module>
+    __version__ = version('tqdm')
+                  ^^^^^^^^^^^^^^^
+C:\Users\HP\AppData\Local\Programs\Python\Python313\Lib\importlib\metadata\__init__.py:987: in version
+    return distribution(distribution_name).version
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\Users\HP\AppData\Local\Programs\Python\Python313\Lib\importlib\metadata\__init__.py:486: in version
+    return self.metadata['Version']
+           ^^^^^^^^^^^^^
+C:\Users\HP\AppData\Local\Programs\Python\Python313\Lib\importlib\metadata\__init__.py:463: in metadata
+    self.read_text('METADATA')
+C:\Users\HP\AppData\Local\Programs\Python\Python313\Lib\importlib\metadata\__init__.py:915: in read_text
+    return self._path.joinpath(filename).read_text(encoding='utf-8')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+a = (WindowsPath('C:/Users/HP/Documents/Codex/2026-11-08/t/work/statikai_audit/StatikAI_Codex_Hazir/.venv/Lib/site-packages/tqdm-4.70.1.dist-info/METADATA'),)
+k = {'encoding': 'utf-8'}
+
+>   monkeypatch.setattr(Path,'read_text',lambda *a,**k:pytest.fail('No ground truth/sidecars in inference'))
+                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   Failed: No ground truth/sidecars in inference
+
+test_beam_pipeline.py:126: Failed
+=========================== short test summary info ===========================
+FAILED test_beam_pipeline.py::test_pixel_scope_rejects_unsupported_loading_or_support[fixed]
+FAILED test_beam_pipeline.py::test_image_only_orchestration_and_unreadable_file
+2 failed, 22 passed in 4.13s

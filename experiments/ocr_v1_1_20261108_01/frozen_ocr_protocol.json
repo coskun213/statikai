@@ -1,0 +1,33 @@
+{
+  "frozen_utc": "2026-11-08T20:12:54.413787+00:00",
+  "plan_sha256": "3c53b6f81cf8a40fbbf3dedc31eab15749f5f6a03ab853a2583d1fd67da1f61e",
+  "code_sha256": {
+    "read_beam_diagram.py": "966b8b9f4a803cb44bebbd85ebf01159f06b2dd566f7b01656e2b060b7ec78e7",
+    "evaluate_ocr_pipeline.py": "603e186c89bb182f96769751f91ff8d038e5f8d7a419986590bd4a75831c7730",
+    "statikai/diagram_reading.py": "4d606e35f9b6fe0d569b30b7db0396338d192dcf51fb2833e49c8b8a4f3ef57b",
+    "statikai/ocr_engine.py": "c618b243dfa6dc744d8f07c8861ac501832795cdac7c13c23062dc58dca2546f",
+    "statikai/ocr_quantities.py": "aef68363ed6093137d14d8985aa808937b283cd94e43786d9a35fced8b7bafb5",
+    "statikai/symbol_reader.py": "42b7805f23366cdf4b699e0f97dea421bbce456d89e26908602dbb4e17361479"
+  },
+  "config": {
+    "minimum_ocr_confidence": 0.8,
+    "endpoint_tolerance_width": 0.02,
+    "dimension_consistency_m": 0.001,
+    "force_label_dx_width": 0.045,
+    "supported_domain": "horizontal pin/roller beam, two downward point loads"
+  },
+  "ocr_models": {
+    "PP-OCRv6_det_small.onnx": "090f04abcd9d9a7498bc4ebf677e4cb9bdce1fe4197ddb7e529f1ef44e1ff94f",
+    "PP-OCRv6_rec_small.onnx": "6f327246b50388f3c176ae304bd95767ea6dc0c9ae92153ef8cbe210b3c14884"
+  },
+  "detector": {
+    "model": "tiny",
+    "architecture": "TinyDetector-v1",
+    "checkpoint_sha256": "cd5224a9c9f3a08f490e673a0a272b7e816b5cadad964f5a526c8dbc6738babc",
+    "threshold": 0.35,
+    "retrained_on": "V2 train only; V2 val threshold"
+  },
+  "validation_metrics_sha256": "133f82f62730281fdb9c864476f5029c0ea3738135663f8955a1b8b17131b77c",
+  "validation_used_for_test_tuning": false,
+  "decisions": "keep v1 thresholds; no changes after validation"
+}

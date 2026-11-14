@@ -1,0 +1,213 @@
+{
+  "pilot_scope": "cropped symbol patch classification; NOT diagram-level detection or OCR",
+  "seed": 2209,
+  "epochs": 5,
+  "best_epoch": 5,
+  "split_counts": {
+    "train": {
+      "n_patches": 980,
+      "n_base_problems": 28,
+      "class_counts": {
+        "pin_support": 140,
+        "roller_support": 140,
+        "point_load": 280,
+        "background": 420
+      }
+    },
+    "val": {
+      "n_patches": 280,
+      "n_base_problems": 8,
+      "class_counts": {
+        "pin_support": 40,
+        "roller_support": 40,
+        "point_load": 80,
+        "background": 120
+      }
+    },
+    "test": {
+      "n_patches": 140,
+      "n_base_problems": 4,
+      "class_counts": {
+        "pin_support": 20,
+        "roller_support": 20,
+        "point_load": 40,
+        "background": 60
+      }
+    }
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 1.2547995319171827,
+      "val_macro_f1": 0.3742857142857143
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.7952937851146776,
+      "val_macro_f1": 0.619281045751634
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.3651588781755798,
+      "val_macro_f1": 0.6666666666666666
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.20493797945732972,
+      "val_macro_f1": 0.9494949494949495
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.1038465105453316,
+      "val_macro_f1": 1.0
+    }
+  ],
+  "val": {
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "confusion_matrix": [
+      [
+        120,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        40,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        40,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        80
+      ]
+    ],
+    "classification_report": {
+      "background": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 120.0
+      },
+      "pin_support": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 40.0
+      },
+      "roller_support": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 40.0
+      },
+      "point_load": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 80.0
+      },
+      "accuracy": 1.0,
+      "macro avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 280.0
+      },
+      "weighted avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 280.0
+      }
+    },
+    "n_patches": 280
+  },
+  "test": {
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "confusion_matrix": [
+      [
+        60,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        20,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        20,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        40
+      ]
+    ],
+    "classification_report": {
+      "background": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 60.0
+      },
+      "pin_support": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 20.0
+      },
+      "roller_support": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 20.0
+      },
+      "point_load": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 40.0
+      },
+      "accuracy": 1.0,
+      "macro avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 140.0
+      },
+      "weighted avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 140.0
+      }
+    },
+    "n_patches": 140
+  },
+  "device": "cpu",
+  "elapsed_s": 4.53,
+  "cautions": [
+    "Dataset is synthetic and simple",
+    "Crops are taken using ground-truth boxes, not detected by the model",
+    "No OCR or end-to-end reaction estimates",
+    "Same generator produces train/test diagrams; no independent style-domain test"
+  ]
+}

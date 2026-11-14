@@ -1,0 +1,217 @@
+{
+  "status": "BAŞARILI",
+  "measurement_completed": true,
+  "phase": "validation",
+  "counts": {
+    "automatic_correct": 41,
+    "images": 50,
+    "review_required": 9
+  },
+  "primary_distinct_problems": {
+    "total": 10,
+    "automatic_correct": 8,
+    "review_required": 2
+  },
+  "families": {
+    "total": 10,
+    "all_layouts_correct": 4
+  },
+  "automatic_correct_rate": 0.82,
+  "review_rate": 0.18,
+  "wrong_result_rate": 0.0,
+  "reaction_max_abs_error_published_kN": 4.969535893906141e-11,
+  "stage_counts": {
+    "image": {
+      "passed": 50
+    },
+    "detection": {
+      "passed": 49,
+      "review_required": 1
+    },
+    "ocr": {
+      "passed": 44,
+      "review_required": 6
+    },
+    "geometry": {
+      "passed": 44,
+      "review_required": 6
+    },
+    "scope": {
+      "passed": 46,
+      "review_required": 4
+    },
+    "validation": {
+      "passed": 41,
+      "review_required": 9
+    },
+    "statics": {
+      "passed": 41,
+      "not_run": 9
+    },
+    "equilibrium": {
+      "passed": 41,
+      "not_run": 9
+    }
+  },
+  "detector_metrics": {
+    "tp": 200,
+    "fp": 1,
+    "fn": 0,
+    "precision": 0.9950248756218906,
+    "recall": 1.0,
+    "f1": 0.9975062344139651,
+    "images": 50,
+    "ground_truth_objects": 200,
+    "per_class": {
+      "pin_support": {
+        "tp": 50,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "roller_support": {
+        "tp": 50,
+        "fp": 1,
+        "fn": 0,
+        "precision": 0.9803921568627451,
+        "recall": 1.0,
+        "f1": 0.9900990099009901
+      },
+      "point_load": {
+        "tp": 100,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      }
+    },
+    "mean_iou_matched_tp": 0.8179990126432963,
+    "mean_best_class_iou_all_gt": 0.8179990126432962,
+    "exact_positive_image_rate": 0.98,
+    "negative_images": 0,
+    "negative_false_alarm_rate": null
+  },
+  "ocr_and_geometry_metrics": {
+    "counts": {
+      "ocr_gt": 370,
+      "ocr_predictions": 543,
+      "ocr_matched": 369,
+      "ocr_matched_iou50": 244,
+      "ocr_exact": 363,
+      "quantity_gt": 270,
+      "quantity_matched": 270,
+      "quantity_correct_si": 264,
+      "quantity_usable_correct_si": 264,
+      "unit_correct": 264,
+      "force_gt": 100,
+      "force_eligible": 100,
+      "force_assignments": 98,
+      "force_link_correct": 98,
+      "force_eligible_link_correct": 98,
+      "force_value_and_link_correct": 98,
+      "images": 50,
+      "accepted_images": 44,
+      "full_correct": 44,
+      "accepted_wrong": 0,
+      "reviewed_images": 6,
+      "L_m_available": 46,
+      "L_m_correct": 46,
+      "P1_kN_available": 49,
+      "P1_kN_correct": 49,
+      "x1_m_available": 46,
+      "x1_m_correct": 46,
+      "P2_kN_available": 49,
+      "P2_kN_correct": 49,
+      "x2_m_available": 47,
+      "x2_m_correct": 47
+    },
+    "metrics": {
+      "ocr_text_detection_precision_iou30": 0.6795580110497238,
+      "ocr_text_detection_recall_iou30": 0.9972972972972973,
+      "ocr_text_detection_recall_iou50": 0.6594594594594595,
+      "ocr_exact_text_recall": 0.981081081081081,
+      "ocr_quantity_correct_si_all_gt": 0.9777777777777777,
+      "ocr_quantity_usable_correct_si_all_gt": 0.9777777777777777,
+      "ocr_quantity_correct_si_when_localized": 0.9777777777777777,
+      "ocr_unit_correct_all_gt": 0.9777777777777777,
+      "force_text_link_correct_all_forces": 0.98,
+      "force_text_link_correct_eligible": 0.98,
+      "force_text_value_and_link_correct_all_forces": 0.98,
+      "full_correct_problem_rate": 0.88,
+      "complete_extraction_coverage": 0.88,
+      "accepted_but_wrong_rate": 0.0,
+      "accepted_precision": 1.0,
+      "review_rate": 0.12,
+      "fields": {
+        "L_m": {
+          "coverage": 0.92,
+          "correct_all": 0.92
+        },
+        "P1_kN": {
+          "coverage": 0.98,
+          "correct_all": 0.98
+        },
+        "x1_m": {
+          "coverage": 0.92,
+          "correct_all": 0.92
+        },
+        "P2_kN": {
+          "coverage": 0.98,
+          "correct_all": 0.98
+        },
+        "x2_m": {
+          "coverage": 0.94,
+          "correct_all": 0.94
+        }
+      }
+    }
+  },
+  "issues": {
+    "extraction_requires_review": 6,
+    "missing_inputs": 6,
+    "missing_unit": 6,
+    "incomplete_dimension_chain": 4,
+    "scope_requires_review": 4,
+    "symbol_inventory": 1,
+    "unsupported_symbol_inventory": 1,
+    "support_type_unverified": 3
+  },
+  "elapsed_seconds": 34.2861658000038,
+  "python": "3.13.12 (tags/v3.13.12:1cbe481, Feb  3 2026, 18:22:25) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "detector": {
+    "model": "tiny",
+    "architecture": "TinyDetector-v1",
+    "checkpoint_sha256": "cd5224a9c9f3a08f490e673a0a272b7e816b5cadad964f5a526c8dbc6738babc",
+    "threshold": 0.35,
+    "retrained_on": "V2 train only; V2 val threshold"
+  },
+  "ocr_engine": {
+    "backend": "RapidOCR / ONNX Runtime CPU",
+    "pretrained": true,
+    "rapidocr_version": "3.10.0",
+    "onnxruntime_version": "1.31.1",
+    "parameters": {
+      "Global.model_root_dir": "C:\\Users\\HP\\Documents\\Codex\\2026-11-08\\t\\outputs\\StatikAI\\experiments\\ocr_v1_20261108_01\\ocr_models",
+      "Global.log_level": "warning",
+      "Global.use_cls": false,
+      "Global.text_score": 0.0,
+      "Det.ocr_version": "PP-OCRv6",
+      "Det.model_type": "small",
+      "Rec.ocr_version": "PP-OCRv6",
+      "Rec.model_type": "small",
+      "EngineConfig.onnxruntime.intra_op_num_threads": 2,
+      "EngineConfig.onnxruntime.inter_op_num_threads": 1,
+      "EngineConfig.onnxruntime.use_cuda": false
+    },
+    "confidence_note": "recognizer score, not a calibrated probability",
+    "models": {
+      "PP-OCRv6_det_small.onnx": "090f04abcd9d9a7498bc4ebf677e4cb9bdce1fe4197ddb7e529f1ef44e1ff94f",
+      "PP-OCRv6_rec_small.onnx": "6f327246b50388f3c176ae304bd95767ea6dc0c9ae92153ef8cbe210b3c14884"
+    }
+  },
+  "limitation": "same-renderer synthetic narrow domain, not real engineering drawings; no guarantee of all unsupported-load rejection"
+}
